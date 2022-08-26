@@ -35,3 +35,6 @@ We have discussed several projects among those projects we have picked the best 
 Parimalla: I have suggested a project regarding food delivery app. The main theme of the project to devolop an application which will give notifications to the customers who are travelling in the near by location and also displays the waiting time to pickup food, It will be easier for the customers and they can order food through app and also can able to see the discounts and coupons.
 
 We have few Discussion with project to update on the projects like providing chat box.
+
+
+Manikanta : discussed about the blueprint of the project 
