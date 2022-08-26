@@ -16,5 +16,9 @@ Iam chennu venkata shashankar who is one of the team member in the project "Stud
 
 Parimalla : I will work for the front end Java Script it makes websites interactive and dynamic. It verifies submission forms, updates specific content on the page without changing the entire page, displays animations, and shows and hides menu.
 
+<<<<<<< HEAD
 
 Manikanta : I am playing the role that gathers the web designing tools for this project.
+=======
+We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
+>>>>>>> 9b3dd9c826aeb3468abccecef9ac283ecab601c6
