@@ -22,6 +22,8 @@ Languages we are going to use in the project :
         2. Database
         3. Java Script, Node.js
 
+--> I have reviewed few websites by taking them as reference, we are going to use the learnt information in upcoming project
+
 ** Manikanta Arumilli **
 ------------------------
 I am manikanta I have a quiet good experience on html and css it helps me to do a website design and style sheets for my project 
