@@ -32,6 +32,8 @@ Manikanta : I am playing the role that gathers the web designing tools for this 
 
 Manikanta : discussed about the blueprint of the project.
 
+--> i have gone through some objectives regarding this project 
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
