@@ -39,6 +39,6 @@ We have discussed several projects among those projects we have picked the best 
 Sai Krishna : I work on JavaScript application frameworks that allows for data exchange in a two-way manner with servers. frameworks that we are going to use are React, React Native, Node.js
 
 We have few Discussion with project to update on the projects like providing chat box.
-
+I have gone through some websites which are helpful to get some knowledge about java script and I have got to know about the functionalities of java script .
 
  
