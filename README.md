@@ -26,6 +26,8 @@ Languages we are going to use in the project :
 
 --> I have gathered information about java script to create dynamic and interactive web content like applications and browsers.
 
+--> We are going to work on designing of prototype
+
 ** Manikanta Arumilli **
 ------------------------
 I am manikanta I have a quiet good experience on html and css it helps me to do a website design and style sheets for my project 
