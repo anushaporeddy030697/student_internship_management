@@ -58,4 +58,6 @@ Sai Krishna : I work on JavaScript application frameworks that allows for data e
 We have few Discussion with project to update on the projects like providing chat box.
 I have gone through some websites which are helpful to get some knowledge about java script and I have got to know about the functionalities of java script .
 
+Drawn a website design on paper for each login pagr
+
  
