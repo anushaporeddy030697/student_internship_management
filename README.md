@@ -51,6 +51,8 @@ Manikanta : discussed about the blueprint of the project.
 9/9/22
 Manikanta : created a rough sketch on the website 
 
+--> gathered information regarding the home page design
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
