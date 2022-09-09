@@ -40,6 +40,8 @@ We have drawn a rough sketch about student portal and its dashboard
 9/9/22
 We have worked on creating home page and selected background image
 
+we have drawn rough sketches for the Student, Company and Admin pages.
+
 ** Manikanta Arumilli **
 ------------------------
 I am manikanta I have a quiet good experience on html and css it helps me to do a website design and style sheets for my project 
