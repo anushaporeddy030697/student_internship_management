@@ -28,6 +28,8 @@ Languages we are going to use in the project :
 
 --> We are going to work on designing of prototype
 
+We have drawn a rough sketch about student portal and its dashboard
+
 ** Manikanta Arumilli **
 ------------------------
 I am manikanta I have a quiet good experience on html and css it helps me to do a website design and style sheets for my project 
