@@ -57,6 +57,8 @@ Manikanta : created a rough sketch on the website
 
 --> gathered information regarding the home page design
 
+-->  supported the team and shared my ideas for rough sketch for the login page
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
