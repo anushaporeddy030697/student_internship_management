@@ -16,6 +16,7 @@ Iam chennu venkata shashankar who is one of the team member in the project "Stud
 
 9/9/2022
 -- coordinating with team for sharing and taking inputs to create home page.
+-- some changes made in home page like text, background image.
 
 ** Parimalla Pokuri **
 ----------------------
