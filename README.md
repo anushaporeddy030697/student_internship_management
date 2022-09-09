@@ -14,6 +14,9 @@ I am the one who proposed the Student Internship Management System, and because 
 
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XML.
 
+9/9/2022
+-- coordinating with team for sharing and taking inputs to create home page.
+
 ** Parimalla Pokuri **
 ----------------------
 Parimalla: I have suggested a project regarding food delivery app. The main theme of the project to devolop an application which will give notifications to the customers who are travelling in the near by location and also displays the waiting time to pickup food, It will be easier for the customers and they can order food through app and also can able to see the discounts and coupons.
