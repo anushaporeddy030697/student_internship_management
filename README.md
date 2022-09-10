@@ -6,6 +6,8 @@ Iam Anusha Poreddy and we are a group of 5 people to develop a project on Studen
 9/8/22
 --> completed drawing the flow chat in online tool called lucid chart.
 
+--> created wiki for the project in repository
+
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XMl.
