@@ -6,6 +6,8 @@ Iam Anusha Poreddy and we are a group of 5 people to develop a project on Studen
 9/8/22
 --> completed drawing the flow chat in online tool called lucid chart.
 
+--> created wiki for the project in repository
+
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XMl.
@@ -57,6 +59,8 @@ Manikanta : created a rough sketch on the website
 
 --> gathered information regarding the home page design
 
+-->  supported the team and shared my ideas for rough sketch for the login page
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
@@ -66,6 +70,6 @@ Sai Krishna : I work on JavaScript application frameworks that allows for data e
 We have few Discussion with project to update on the projects like providing chat box.
 I have gone through some websites which are helpful to get some knowledge about java script and I have got to know about the functionalities of java script .
 
-Drawn a website design on paper for each login pagr
+Drawn a website design on paper for each login page
 
- 
+ will be working on the home page login buttons and functions. 
