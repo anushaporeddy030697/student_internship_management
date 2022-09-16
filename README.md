@@ -74,7 +74,8 @@ Manikanta : created a rough sketch on the website
 -->  supported the team and shared my ideas for rough sketch for the login page
 
 9-16-2022
--->  as a team we worked on the ER diagram and met one of the instructor 
+-->  as a team we worked on the ER diagram and met one of the instructor.
+--> as i gone through some of the technologies for the  backend part.
 
 ** Sai Krishna Gadde **
 -----------------------
