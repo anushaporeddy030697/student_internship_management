@@ -97,3 +97,5 @@ Drawn a website design on paper for each login page
 
  As per the instructor guidence we had meet the professor Dr.prasad chetti regarding data scheme and E-R diagram 
 
+ For this Sprint we are working on the Funconality of the project.
+
