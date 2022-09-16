@@ -72,4 +72,7 @@ I have gone through some websites which are helpful to get some knowledge about 
 
 Drawn a website design on paper for each login page
 
- will be working on the home page login buttons and functions. 
+ will be working on the home page login buttons and functions.
+
+ 09-15-2022
+ As per the instructor guidance we had meet the professor Dr.prasad chetti regarding data scheme and E-R diagram 
