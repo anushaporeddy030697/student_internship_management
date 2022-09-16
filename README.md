@@ -7,6 +7,8 @@ Iam Anusha Poreddy and we are a group of 5 people to develop a project on Studen
 --> completed drawing the flow chat in online tool called lucid chart.
 
 --> created wiki for the project in repository
+worked on databse collection over flow.
+supported in selection of web page login design.
 
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
@@ -15,6 +17,13 @@ Iam chennu venkata shashankar who is one of the team member in the project "Stud
 I am the one who proposed the Student Internship Management System, and because I enjoy web design and have made several web sites, my expertise will be helpful to the project's success. we collaborate to complete this project successfully, and I'll do my part by taking the initiative as teamwork is more about us than it is about me.
 
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XML.
+
+I am working on the web design for the three registration pages for students, admin and company
+
+I was working on the flow chart of the project.
+
+I made rough figure on the paper for login pages design flow chart and dashboard.
+
 
 9/9/2022
 -- coordinating with team for sharing and taking inputs to create home page.
@@ -53,6 +62,9 @@ Manikanta : I am playing the role that gathers the web designing tools for this 
 Manikanta : discussed about the blueprint of the project.
 
 --> i have gone through some objectives regarding this project 
+--> i have gone through some elements for this website like contact information....
+--> i have to create some basics layouts for the website
+
 
 9/9/22
 Manikanta : created a rough sketch on the website 
@@ -70,9 +82,13 @@ Sai Krishna : I work on JavaScript application frameworks that allows for data e
 We have few Discussion with project to update on the projects like providing chat box.
 I have gone through some websites which are helpful to get some knowledge about java script and I have got to know about the functionalities of java script .
 
+Reffered some websites for design of web pages similar to our website and drawn a rough design 
+
+will be working on the prototypes and dashboards of student  faculty and admin.
+
 Drawn a website design on paper for each login page
 
  will be working on the home page login buttons and functions.
 
  09-15-2022
- As per the instructor guidance we had meet the professor Dr.prasad chetti regarding data scheme and E-R diagram 
+ As per the instructor guidence we had meet the professor Dr.prasad chetti regarding data scheme and E-R diagram 
