@@ -73,6 +73,9 @@ Manikanta : created a rough sketch on the website
 
 -->  supported the team and shared my ideas for rough sketch for the login page
 
+9-16-2022
+-->  as a team we worked on the ER diagram and met one of the instructor 
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
