@@ -14,6 +14,8 @@ supported in selection of web page login design.
 
 --> worked on ER diagram for the database storage.
 
+--> created Login page UI design.
+
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XMl.
