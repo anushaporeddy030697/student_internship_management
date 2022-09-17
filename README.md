@@ -36,6 +36,10 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 -- some changes made in home page like text, background image.
 
+9/16/2022
+
+--> Regarding database schema we consultaed the database faculty inorder to get inputs from the professor to get progress in ER diagram.
+
 ** Parimalla Pokuri **
 ----------------------
 Parimalla: I have suggested a project regarding food delivery app. The main theme of the project to devolop an application which will give notifications to the customers who are travelling in the near by location and also displays the waiting time to pickup food, It will be easier for the customers and they can order food through app and also can able to see the discounts and coupons.
