@@ -10,6 +10,10 @@ Iam Anusha Poreddy and we are a group of 5 people to develop a project on Studen
 worked on databse collection over flow.
 supported in selection of web page login design.
 
+9/16/22
+
+--> worked on ER diagram for the database storage.
+
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XMl.
