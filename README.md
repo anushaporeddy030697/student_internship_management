@@ -14,7 +14,7 @@ supported in selection of web page login design.
 
 --> worked on ER diagram for the database storage.
 
---> created Login page UI design.
+--> created Login page UI design and added to home page.
 
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
