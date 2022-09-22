@@ -89,6 +89,9 @@ Manikanta : created a rough sketch on the website
 -->  as a team we worked on the ER diagram and met one of the instructor.
 --> as i gone through some of the technologies for the  backend part.
 
+9-22-2022
+--> we worked on a functionality for the signup page and some data will store in the database server .
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
