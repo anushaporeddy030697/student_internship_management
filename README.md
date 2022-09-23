@@ -115,3 +115,7 @@ Drawn a website design on paper for each login page
 
  For this Sprint we are working on the Funconality of the project.
 
+ 09-23-2022
+
+We hadv sucessfully made the registration page functional  using mongDB.
+
