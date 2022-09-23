@@ -58,12 +58,17 @@ Languages we are going to use in the project :
 --> I have gathered information about java script to create dynamic and interactive web content like applications and browsers.
 
 --> We are going to work on designing of prototype
+
 9/8/22
 We have drawn a rough sketch about student portal and its dashboard
+
 9/9/22
 We have worked on creating home page and selected background image
 
 we have drawn rough sketches for the Student, Company and Admin pages.
+
+9/23/22
+I have learnt few functionalities of Java Script and have referred some webpages for building our company page
 
 ** Manikanta Arumilli **
 ------------------------
