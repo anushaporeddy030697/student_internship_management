@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #344a72;
+        line-height: 1.8;
+        color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #container {
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        background: #fff;
+        padding: 20px;
+        color: #333;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+        padding: 5px;
+      }
+
+      .form-wrap .form-group {
+        width: 100%;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        color: #666;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        border: #344a72 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        background: #49c1a2;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        color: #fff;
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e;
+      }
+
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      footer a {
+        color: #49c1a2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Registration</h1>
+    <form id="reg-form">
+      <input
+        type="text"
+        autocomplete="off"
+        id="username"
+        placeholder="Username"
+      />
+      <input
+        type="password"
+        autocomplete="off"
+        id="password"
+        placeholder="Password"
+      />
+      <input type="submit" value="Submit Form" />
+    </form> -->
+
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+        <form id="reg-form">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" />
+          </div>
+          <div class="form-group">
+            <label for="username">UserName</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="number" id="phone" name="phone" min="1" max="10" />
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+          <p class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>Already have an account? <a href="#">Login Here</a></p>
+      </footer>
+    </div>
+
+    <script>
+      const form = document.getElementById('reg-form')
+      form.addEventListener('submit', registerUser)
+
+      async function registerUser(event) {
+        event.preventDefault()
+        const username = document.getElementById('username').value
+        const password = document.getElementById('password').value
+        const firstName = document.getElementById('first-name').value
+        const lastName = document.getElementById('last-name').value
+        const email = document.getElementById('email').value
+        const phone = document.getElementById('phone').value
+        console.log(firstName)
+        console.log(lastName)
+        console.log(email)
+
+        const result = await fetch('/api/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            firstName,
+            lastName,
+            username,
+            email,
+            password,
+            phone,
+          }),
+        }).then((res) => res.json())
+        console.log('finished')
+        if (result.status === 'ok') {
+          // everythign went fine
+          alert("success")
+        } else {
+          alert(result.error)
+        }
+      }
+    </script>
+  </body>
+</html>
