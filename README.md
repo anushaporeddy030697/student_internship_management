@@ -16,6 +16,10 @@ supported in selection of web page login design.
 
 --> created Login page UI design and added to home page.
 
+9/23/22
+
+--> we worked on connection between database and frontend.
+
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XMl.
