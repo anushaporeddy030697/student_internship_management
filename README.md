@@ -97,6 +97,8 @@ Manikanta : created a rough sketch on the website
 9-22-2022
 --> we worked on a functionality for the signup page and some data will store in the database server .
 
+-->  we successfully installed the node js and mongodb server and we have to connect the database server for remaining pages also.
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
