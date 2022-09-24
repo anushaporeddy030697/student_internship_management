@@ -48,6 +48,11 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 --> Done with home page UI design and uploded in repository and added 3rd week actions iteam and work done in wiki repository. 
 
+9/23/2022
+
+--> I have worked functionality on signup page and tested wheather data is storing in backend or not.
+
+
 ** Parimalla Pokuri **
 ----------------------
 Parimalla: I have suggested a project regarding food delivery app. The main theme of the project to devolop an application which will give notifications to the customers who are travelling in the near by location and also displays the waiting time to pickup food, It will be easier for the customers and they can order food through app and also can able to see the discounts and coupons.
