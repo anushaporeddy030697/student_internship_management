@@ -110,6 +110,10 @@ Manikanta : created a rough sketch on the website
 
 -->  we successfully installed the node js and mongodb server and we have to connect the database server for remaining pages also.
 
+9-29-2022
+
+-->  we will be working on how do we advertise the job and modifying the functionality in the login page  
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
