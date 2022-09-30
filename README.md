@@ -122,6 +122,8 @@ Manikanta : created a rough sketch on the website
 
 -->   we worked on the mongo db database that how the data will be stored for the remaining pages .
 
+-->  data was successfully stored in the database server and we will work on how the remaining data will be stored in the database.
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
