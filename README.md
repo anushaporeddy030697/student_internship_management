@@ -114,6 +114,8 @@ Manikanta : created a rough sketch on the website
 
 -->  we will be working on how do we advertise the job and modifying the functionality in the login page  
 
+-->   we worked on the mongo db database that how the data will be stored for the remaining pages .
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
