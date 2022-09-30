@@ -146,5 +146,7 @@ We hadv sucessfully made the registration page functional  using mongDB.
 I had learned few concepts in mongoDB which helped me to connect webpages with Database.
 09-29-2022
 we are working on the funconality of the login page  and advertising
+ 
+ we had completed the funconality for the company login .
 
 
