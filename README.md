@@ -84,6 +84,9 @@ I have learnt few functionalities of Java Script and have referred some webpages
 9/24/22
 I have learnt architecture of Node.js and known objectives which are going to helpful for our login pages
 
+9/30/33
+Worked on company page and its dashboards which will give information about jos postings 
+
 ** Manikanta Arumilli **
 ------------------------
 I am manikanta I have a quiet good experience on html and css it helps me to do a website design and style sheets for my project 
