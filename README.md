@@ -120,7 +120,7 @@ Manikanta : created a rough sketch on the website
 
 -->  we will be working on how do we advertise the job and modifying the functionality in the login page  
 
--->   we worked on the mongo db database that how the data will be stored for the remaining pages .
+-->   we worked on the mongo db database that how the data will be stored in the database server for the signup page 
 
 -->  data was successfully stored in the database server and we will work on how the remaining data will be stored in the database.
 
