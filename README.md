@@ -56,6 +56,10 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 --> I have worked functionality on signup page and tested wheather data is storing in backend or not.
 
+9/30/22
+
+--> searching in broswer to know more about the functionalities of company login page.
+
 
 ** Parimalla Pokuri **
 ----------------------
