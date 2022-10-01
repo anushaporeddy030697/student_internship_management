@@ -64,6 +64,8 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 --> some points added to wiki in the week5 updation regarding progress in the project.
 
+--> prepared for workshop to present the new technologies and skills learnt in developing the projects.
+
 
 ** Parimalla Pokuri **
 ----------------------
