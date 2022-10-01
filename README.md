@@ -22,6 +22,10 @@ supported in selection of web page login design.
 
 --> Updated the wiki by adding 4th week action items.
 
+9/30/22
+
+--> I supported the team in gathering information regarding company login page functionality.
+
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XMl.
