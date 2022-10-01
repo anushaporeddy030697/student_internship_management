@@ -26,7 +26,9 @@ supported in selection of web page login design.
 
 --> I supported the team in gathering information regarding company login page functionality.
 
---> updated the wiki in github repository.
+--> Updated the wiki in github repository.
+
+--> Workshop presentation on the project to present newly learnt skills to develop project.
 
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
