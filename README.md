@@ -62,6 +62,8 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 --> searching in broswer to know more about the functionalities of company login page.
 
+--> some points added to wiki in the week5 updation regarding progress in the project.
+
 
 ** Parimalla Pokuri **
 ----------------------
