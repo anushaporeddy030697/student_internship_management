@@ -140,6 +140,10 @@ Manikanta : created a rough sketch on the website
 
 -->  data was successfully stored in the database server and we will work on how the remaining data will be stored in the database.
 
+10-6-2022
+
+--> we worked on the hash function that is the data which we entered in the student signup page the password will shows the hash code in the database server , because if the database is hacked it doesnt shows the password for the hackers.
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
