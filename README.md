@@ -114,6 +114,8 @@ Worked on company page and its dashboards which will give information about jos 
 10/07/22
 Worked on Student page like how they are going to apply for the posted jobs 
 
+Installed Robo3T for running our webpages in the backend database
+
 ** Manikanta Arumilli **
 ------------------------
 I am manikanta I have a quiet good experience on html and css it helps me to do a website design and style sheets for my project 
