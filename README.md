@@ -103,6 +103,9 @@ I have learnt architecture of Node.js and known objectives which are going to he
 9/30/33
 Worked on company page and its dashboards which will give information about jos postings 
 
+10/07/22
+Worked on Student page like how they are going to apply for the posted jobs 
+
 ** Manikanta Arumilli **
 ------------------------
 I am manikanta I have a quiet good experience on html and css it helps me to do a website design and style sheets for my project 
