@@ -72,6 +72,10 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 --> prepared for workshop to present the new technologies and skills learnt in developing the projects.
 
+10/7/2022
+
+--> Prepared for the presentation regarding the updates of the project till data and functionalities.
+
 
 ** Parimalla Pokuri **
 ----------------------
@@ -187,5 +191,6 @@ we are working on the funconality of the login page  and advertising
  we had completed the funconality for the company login .
 
  we are working on the dashboards of the login pages.
-
+10-07-2022
+we had worked on the hash function for the Robo-3t which hides the password information  of the login credintials
 
