@@ -147,6 +147,8 @@ Manikanta : created a rough sketch on the website
 
 --> we worked on the hash function that is the data which we entered in the student signup page the password will shows the hash code in the database server , because if the database is hacked it doesnt shows the password for the hackers.
 
+-->  We worked on how company can advertise the jobs for the students , as we got some issues while implementing this , so we have to work on this.
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
