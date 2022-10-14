@@ -161,6 +161,13 @@ Manikanta : created a rough sketch on the website
 
 -->  We worked on how company can advertise the jobs for the students , as we got some issues while implementing this , so we have to work on this.
 
+10-13-2022
+
+--> We successfully created a logout button functionality for both student page and company page and next we will be trying to use the sessional logout for both the pages.
+
+
+
+
 ** Sai Krishna Gadde **
 -----------------------
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
