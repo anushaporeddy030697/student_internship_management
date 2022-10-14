@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/authcheck.js"></script>
+  </head>
+  <body>
+    <header id="home">
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo">
+            <a href="index.html">Student Internship Management System</a>
+          </h1>
+          <ul>
+            <li><a class="current" href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a class="logout-btn" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container py3">
+      <h1 id="welcome" class="name-welcome">welcome {{name}}</h1>
+      <div class="boxes py6">
+        <div class="totalapplied">
+         <h2>0</h2>
+          <h3>Total No of students</h3> 
+        </div>
+        <div class="totalcompanies">
+          <h2>0</h2>
+          <h3>Total No of companies</h3> 
+        </div>
+        <div class="totaljobs">
+          <h2>0</h2>
+          <h3>Total No Of Jobs</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/adminindex.js"></script>
+    
+  </body>
+</html>
