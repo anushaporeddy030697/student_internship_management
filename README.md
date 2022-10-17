@@ -1,4 +1,19 @@
 ## Student Internship Managememt System
+
+### Introduction
+
+We are a group of 5 people working on a project to create a student internship management system. Here students can apply for jobs which are posted by different companies and admin is an intermediate panel between students and companies. By designing login sites where users may register for an account and use it, we establish an interface for students, administrators, and businesses. By logging onto their accounts, Students can apply for jobs, Companies can post jobs and a brief description of the position in their accounts, and Administrators can accept or reject both the Student and Company posts.
+
+<ol>Table of Contents:
+<li> <a href="#anu">Work contributed by Anusha</a></li>
+<li> <a href="#shashi">Work contributed by Shashank</a></li>
+<li> <a href="#pari">Work contributed by Parimalla</a></li>
+<li> <a href="#mani">Work contributed by Manikanta</a></li>
+<li> <a href="#sai">Work contributed by Sai Krishna</a></li>
+</ol>
+
+
+<p><a="anu">
 ** Anusha Poreddy **
 --------------------
 Iam Anusha Poreddy and we are a group of 5 people to develop a project on Student Intership management system.
@@ -35,7 +50,10 @@ supported in selection of web page login design.
 --> prepared for presenting the project ppt, and done with presentation.
 
 --> updated the wiki for week6.
+</a>
+<p>
 
+<p><a="shashi">
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XMl.
@@ -78,6 +96,9 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 --> Prepared for the presentation regarding the updates of the project till data and functionalities.
 
+</a></p>
+
+<p><a="pari">
 
 ** Parimalla Pokuri **
 ----------------------
@@ -118,6 +139,8 @@ Worked on Student page like how they are going to apply for the posted jobs
 
 Installed Robo3T for running our webpages in the backend database
 
+</a></p>
+<p><a="mani">
 ** Manikanta Arumilli **
 ------------------------
 I am manikanta I have a quiet good experience on html and css it helps me to do a website design and style sheets for my project 
@@ -165,8 +188,8 @@ Manikanta : created a rough sketch on the website
 
 --> We successfully created a logout button functionality for both student page and company page and next we will be trying to use the sessional logout for both the pages.
 
-
-
+</a></p>
+<p><a="sai">
 
 ** Sai Krishna Gadde **
 -----------------------
@@ -204,4 +227,4 @@ we are working on the funconality of the login page  and advertising
  we are working on the dashboards of the login pages.
 10-07-2022
 we had worked on the hash function for the Robo-3t which hides the password information  of the login credintials
-
+</a></p>
