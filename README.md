@@ -5,17 +5,18 @@
 We are a group of 5 people working on a project to create a student internship management system. Here students can apply for jobs which are posted by different companies and admin is an intermediate panel between students and companies. By designing login sites where users may register for an account and use it, we establish an interface for students, administrators, and businesses. By logging onto their accounts, Students can apply for jobs, Companies can post jobs and a brief description of the position in their accounts, and Administrators can accept or reject both the Student and Company posts.
 
 <ol>Table of Contents:
-<li> <a href="#anu">Work contributed by Anusha</a></li>
-<li> <a href="#shashi">Work contributed by Shashank</a></li>
-<li> <a href="#pari">Work contributed by Parimalla</a></li>
-<li> <a href="#mani">Work contributed by Manikanta</a></li>
-<li> <a href="#sai">Work contributed by Sai Krishna</a></li>
+     <li> <a href="#anu">Work contributed by Anusha</a></li>
+     <li> <a href="#shashi">Work contributed by Shashank</a></li>
+     <li> <a href="#pari">Work contributed by Parimalla</a></li>
+     <li> <a href="#mani">Work contributed by Manikanta</a></li>
+     <li> <a href="#sai">Work contributed by Sai Krishna</a></li>
 </ol>
 
 
-<p><a="anu">
+
 ** Anusha Poreddy **
 --------------------
+<p><a="anu">
 Iam Anusha Poreddy and we are a group of 5 people to develop a project on Student Intership management system.
 
 9/8/22
@@ -53,9 +54,10 @@ supported in selection of web page login design.
 </a>
 <p>
 
-<p><a="shashi">
+
 ** CHENNU VENKATA SHASHANKAR **
 --------------------------------
+<p><a="shashi">
 Iam chennu venkata shashankar who is one of the team member in the project "Student Internship Management". I work for web design using XMl.
 
 I am the one who proposed the Student Internship Management System, and because I enjoy web design and have made several web sites, my expertise will be helpful to the project's success. we collaborate to complete this project successfully, and I'll do my part by taking the initiative as teamwork is more about us than it is about me.
@@ -98,10 +100,11 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 </a></p>
 
-<p><a="pari">
+
 
 ** Parimalla Pokuri **
 ----------------------
+<p><a="pari">
 Parimalla: I have suggested a project regarding food delivery app. The main theme of the project to devolop an application which will give notifications to the customers who are travelling in the near by location and also displays the waiting time to pickup food, It will be easier for the customers and they can order food through app and also can able to see the discounts and coupons.
 
 Parimalla : I will work for the front end Java Script it makes websites interactive and dynamic. It verifies submission forms, updates specific content on the page without changing the entire page, displays animations, and shows and hides menu.
@@ -140,9 +143,10 @@ Worked on Student page like how they are going to apply for the posted jobs
 Installed Robo3T for running our webpages in the backend database
 
 </a></p>
-<p><a="mani">
+
 ** Manikanta Arumilli **
 ------------------------
+<p><a="mani">
 I am manikanta I have a quiet good experience on html and css it helps me to do a website design and style sheets for my project 
 
 Manikanta : I am playing the role that gathers the web designing tools for this project.
@@ -189,10 +193,11 @@ Manikanta : created a rough sketch on the website
 --> We successfully created a logout button functionality for both student page and company page and next we will be trying to use the sessional logout for both the pages.
 
 </a></p>
-<p><a="sai">
+
 
 ** Sai Krishna Gadde **
 -----------------------
+<p><a="sai">
 We have discussed several projects among those projects we have picked the best 2 project among those we have picked Student internship Managment to do as our project
 
 Sai Krishna : I work on JavaScript application frameworks that allows for data exchange in a two-way manner with servers. frameworks that we are going to use are React, React Native, Node.js
