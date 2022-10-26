@@ -25,10 +25,10 @@ We are a group of 5 people working on a project to create a student internship m
      
 </ol>
      
-## Table of Contents
+## Teammates Contribution
 <ol>
      <li> <a href="https://github.com/anushaporeddy030697/student_internship_management/edit/main/Team%20Contribution.md">Work contributed by Anusha</a></li>
-     <li> <a href="#shashi">Work contributed by Shashank</a></li>
+     <li> <a href="https://github.com/anushaporeddy030697/student_internship_management/edit/main/Team%20Contribution.md #shashi">Work contributed by Shashank</a></li>
      <li> <a href="#pari">Work contributed by Parimalla</a></li>
      <li> <a href="#mani">Work contributed by Manikanta</a></li>
      <li> <a href="#sai">Work contributed by Sai Krishna</a></li>
