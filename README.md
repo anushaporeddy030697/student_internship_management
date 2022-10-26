@@ -25,8 +25,8 @@ We are a group of 5 people working on a project to create a student internship m
      
 </ol>
      
-
-<ol>Table of Contents:
+## Table of Contents
+<ol>
      <li> <a href="#anu">Work contributed by Anusha</a></li>
      <li> <a href="#shashi">Work contributed by Shashank</a></li>
      <li> <a href="#pari">Work contributed by Parimalla</a></li>
