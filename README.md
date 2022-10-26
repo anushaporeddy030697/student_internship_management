@@ -27,7 +27,7 @@ We are a group of 5 people working on a project to create a student internship m
      
 ## Table of Contents
 <ol>
-     <li> <a href="#anu">Work contributed by Anusha</a></li>
+     <li> <a href="https://github.com/anushaporeddy030697/student_internship_management/edit/main/Team%20Contribution.md">Work contributed by Anusha</a></li>
      <li> <a href="#shashi">Work contributed by Shashank</a></li>
      <li> <a href="#pari">Work contributed by Parimalla</a></li>
      <li> <a href="#mani">Work contributed by Manikanta</a></li>
