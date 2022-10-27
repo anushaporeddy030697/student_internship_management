@@ -1,3 +1,15 @@
+
+## Teammates Contribution
+<ol>
+     <li> <a href="#anu ">Work contributed by Anusha</a></li>
+     <li> <a href="#shashi">Work contributed by Shashank</a></li>
+     <li> <a href="#pari">Work contributed by Parimalla</a></li>
+     <li> <a href="#mani">Work contributed by Manikanta</a></li>
+     <li> <a href="#sai">Work contributed by Sai Krishna</a></li>
+</ol>
+
+
+
 ** Anusha Poreddy **
 --------------------
 <p><a name="anu">
