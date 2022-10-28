@@ -1,7 +1,8 @@
 const company=require("../models/companies")
 const express=require("express")
 const auth=require("../middleWare/companyauth")
-
+const job = require("../models/jobs")
+const applications = require("../models/applications")
 const router = new express.Router()
 
 
@@ -37,10 +38,70 @@ router.post("/company",async(req,res)=>{
     res.send({user,token})
     }
     catch(e){
-        res.status(400).send(e)
+        res.status(400).send({error:"unable to login"})
     }
 
  })
+ 
+ router.get("/company/totaljobs",auth,async(req,res)=>{
+    try{
+    const companyid = req.query.companyid
+    const jobsCount  = await job.find({postedby:companyid}).count()
+     res.status(200).send({jobsCount})
+    }catch(e){
+     res.status(400).send({error:e})
+    }
+ })
+ router.get("/applications",auth,async(req,res)=>{
+    var applicationsCount = 0 
+     try{
+        let i = 0
+        const companyid = req.query.companyid
+        const jobs = await job.find({postedby:companyid}).select("_id")
+        let newJobs = []
+        for(i=0;i<jobs.length;i++){
+            newJobs[i] = jobs[i]._id.toString()
+        }
+         const application = await applications.find()  
+         var filteredApplications = application.filter((appli)=>newJobs.includes(appli.jobid.toString()))
+        applicationsCount = filteredApplications.length
+         res.status(200).send({applicationsCount})
+     }catch(e){
+         res.status(400).send({error:e})
+     }
+ })
+  
+ router.get("/viewapplications",auth,async(req,res)=>{
+    try{
+         let i = 0
+        const companyid = req.query.companyid
+        const jobs = await job.find({postedby:companyid}).select("_id")
+        let newJobs = []
+        for(i=0;i<jobs.length;i++){
+            newJobs[i] = jobs[i]._id.toString()
+        }
+         const application = await applications.find()  
+         var filteredApplications = application.filter((appli)=>newJobs.includes(appli.jobid.toString()))
+        
+        
+    
+       res.send(filteredApplications)
+    } 
+         
+     catch(e){
+         res.status(400).send({error:e})
+     }
+ })
+router.get("/companypostedjobs",auth,async (req,res)=>{
+    try{
+        const companyid = req.query.companyid
+       const jobs = await job.find({postedby:companyid})
+       res.status(200).send(jobs)
+    }
+    catch(e){
+        res.status(400).send({error:e})
+    }
+})
 
  //endpoint for logout user
  router.post("/company/logout",auth, async(req,res) =>{
@@ -50,10 +111,11 @@ router.post("/company",async(req,res)=>{
             return token.token != req.token
         })
         await req.user.save()
+        res.clearCookie('Authorization')
         res.send()
      }
      catch(e){
-         res.status(500).send(e)
+         res.status(500).send({error:"unable to logout"})
      }
  })
 
