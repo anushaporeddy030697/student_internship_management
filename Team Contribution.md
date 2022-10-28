@@ -228,4 +228,8 @@ we are working on the funconality of the login page  and advertising
  we are working on the dashboards of the login pages.
 10-07-2022
 we had worked on the hash function for the Robo-3t which hides the password information  of the login credintials
+
+10-28-2022
+We are working on the Funconality of the Forgot password which helps the user to retrive their password when forgotten.
+
 </a></p>
