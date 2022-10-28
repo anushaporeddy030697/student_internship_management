@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #d3eccb;
+        line-height: 1.8;
+        color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #container {
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        background: #fff;
+        padding: 20px;
+        color: #333;
+      }
+
+      .form-wrap .options {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .form-wrap .options .option {
+        background: rgb(167, 170, 180);
+        color: #333;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+      }
+
+      .form-wrap .options .current {
+        background: #37a08e;
+        color: #fff;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+        padding: 5px;
+      }
+
+      .form-wrap .form-group {
+        width: 100%;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        color: #666;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        border: #344a72 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .form-wrap .form-group select {
+        width: 100%;
+        border: #344a72 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        background: #49c1a2;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        color: #fff;
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e;
+      }
+
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      footer a {
+        color: #49c1a2;
+      }
+    </style>
+    <script src="js/authcheck.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Post A Job</h1>
+        <form id="post-job">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required="true" />
+          </div>
+          <div class="form-group">
+            <label for="yoe">Years of Experiance</label>
+            <input type="number" name="yoe" id="yoe" required />
+          </div>
+          <div class="form-group">
+            <label for="cname">Company name</label>
+            <input type="text" name="cname" id="cname" required />
+          </div>
+          <div class="form-group">
+            <label for="cid">Company Id</label>
+            <input type="text" name="cid" id="cid" required />
+          </div>
+          <div class="form-group">
+            <label>Work Type</label>
+            <select name="worktype" id="worktype">
+              <option value="remote">Remote</option>
+              <option value="onsite">On-Site</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Employeement Type</label>
+            <select name="emptype" id="emptype">
+              <option value="Full-time">Full Time</option>
+              <option value="Part-time">Part Time</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="empbenifits">Employee Benifits</label>
+            <textarea
+              name="empbenifits"
+              id="empbenifits"
+              rows="3"
+              cols="41" 
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="requirements">Requirements</label>
+            <textarea
+              name="requirements"
+              id="requirements"
+              rows="5"
+              cols="41"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label>About Company</label>
+            <input type="file" id="aboutcompany" name="aboutcompany" accept=".pdf"required>
+          </div>
+          <button type="submit" class="post-job btn">Post Job</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/postjob.js"></script>
+  </body>
+</html>
