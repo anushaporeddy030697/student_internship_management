@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #bbf3a9;
+        line-height: 1.8;
+        color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #container {
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        background: #fff;
+        padding: 20px;
+        color: #333;
+      }
+
+      .form-wrap .options {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .form-wrap .options .option {
+        background: rgb(167, 170, 180);
+        color: #333;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+      }
+
+      .form-wrap .options .current {
+        background: #37a08e;
+        color: #fff;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+        padding: 5px;
+      }
+
+      .form-wrap .form-group {
+        width: 100%;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        color: #666;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        border: #344a72 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .form-wrap .form-group select {
+        width: 100%;
+        border: #344a72 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        background: #49c1a2;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        color: #fff;
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e;
+      }
+
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      footer a {
+        color: #49c1a2;
+      }
+    </style>
+    <script src="js/auth.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Apply Here</h1>
+        <form id="student-apply">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" required />
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="10" max="100" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" id="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">University Id</label>
+            <input type="number" name="universityid" id="universityid" required />
+          </div>
+          <div class="form-group">
+            <label>Gender </label>
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="Female">Female</option>
+              <option value="other">Others</option>
+            </select>
+          </div> 
+          <div class="form-group">
+            <label>Resume</label>
+            <input type="file" accept="application/pdf" id="resume" name="resume" required>
+          </div>
+          
+          <p id="message"></p>
+          <button type="submit" class="btn" id="sign-up">Apply</button>
+          
+        </form>
+      </div>
+      
+    </div>
+    <script src="applypage.js"></script>
+  </body>
+</html>
