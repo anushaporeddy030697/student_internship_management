@@ -97,6 +97,11 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 10/7/2022
 
 --> Prepared for the presentation regarding the updates of the project till data and functionalities.
+     
+10/28/22
+     
+--> I have prepared presentation for workshop2.     
+     
 
 </a></p>
 
