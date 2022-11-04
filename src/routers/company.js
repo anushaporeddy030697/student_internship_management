@@ -119,7 +119,17 @@ router.get("/companypostedjobs",auth,async (req,res)=>{
      }
  })
 
- 
+  //endpoint for logout all devices
+  router.post("/company/logoutall", auth, async(req,res)=>{
+    try{
+       req.user.tokens=[]
+       await req.user.save()
+       res.send()
+    }
+    catch(e){
+       res.status(400).send()
+    }
+})
  
  //endpoint for getting  user
  router.get("/company/me", auth, async(req,res)=>{
