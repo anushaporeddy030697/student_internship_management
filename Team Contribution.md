@@ -246,5 +246,8 @@ we had worked on the hash function for the Robo-3t which hides the password info
 
 10-28-2022
 We are working on the Funconality of the Forgot password which helps the user to retrive their password when forgotten.
+     
+  11-04-2022
+We have sucessfully applied the false condition for the incorrect username and incorrect password
 
 </a></p>
