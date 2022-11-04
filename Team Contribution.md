@@ -198,7 +198,10 @@ Manikanta : created a rough sketch on the website
 --> We successfully created a logout button functionality for both student page and company page and next we will be trying to use the sessional logout for both the pages.
      
 10-28-2022
--->  We are working on the functionality for end point logout for all the devices.    
+-->  We are working on the functionality for end point logout for all the devices.  
+ 
+11-4-2022     
+--> Successfully done the endpoint logout for all the devices but we have to check wheather it is logging off in all the devices or not.     
 
 </a></p>
 
