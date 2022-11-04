@@ -202,6 +202,8 @@ Manikanta : created a rough sketch on the website
  
 11-4-2022     
 --> Successfully done the endpoint logout for all the devices but we have to check wheather it is logging off in all the devices or not.     
+     
+--> Started working on the dynamoDB  database after that we will try to connect to this database.     
 
 </a></p>
 
