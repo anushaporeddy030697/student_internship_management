@@ -50,7 +50,13 @@ supported in selection of web page login design.
      
 10/28/22
      
---> updated week9 updates in wiki.     
+--> updated week9 updates in wiki.    
+     
+11/04/22
+     
+--> upadted the wiki
+--> prepared ppt presentation for workshop2
+--> presented presentation of the project and also overview of our progess in the project
 </a>
 <p>
 
