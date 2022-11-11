@@ -260,5 +260,8 @@ We are working on the Funconality of the Forgot password which helps the user to
      
   11-04-2022
 We have sucessfully applied the false condition for the incorrect username and incorrect password
+     
+     11-10-2022
+ To reset the password we have used a third party application called sendGrid.
 
 </a></p>
