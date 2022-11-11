@@ -155,6 +155,10 @@ Installed Robo3T for running our webpages in the backend database
      
 11/04/22
 Updated Wiki with Week10 updates
+     
+11/11/22
+Worked on the Student page, validate the jobs posted by the companies,
+Worked on the total jobs available block  in Student page and displayed those jobs in the Grid View.
 
 </a></p>
 
