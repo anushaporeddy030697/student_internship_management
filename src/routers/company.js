@@ -152,6 +152,32 @@ router.get("/companypostedjobs",auth,async (req,res)=>{
     }
  })
 
+ 
+ //endpoint for updating user fields
+router.patch("/company/update/me", auth, async(req,res)=>{
+    const _id=req.user._id
+    const Updates = Object.keys(req.body)
+    const allowedUpdates = ["name","email","password","age"]
+    const isValidOperator = Updates.every((update)=> allowedUpdates.includes(update))
+
+    if(!isValidOperator){
+        return res.status(400).send({error:"invalid updates!"})
+    }
+    
+    try{
+        const user= req.user
+        Updates.forEach((update)=>{
+            user[update]=req.body[update]
+        })
+        await user.save()
+        res.send(user)
+    }
+    catch(e){
+        res.status(400).send(e)
+    }
+
+})
+
 //endpoint for deleting users
 router.delete("/company/delete/me", auth, async(req,res)=>{
     const _id=req.user._id
