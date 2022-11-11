@@ -142,7 +142,15 @@ router.get("/companypostedjobs",auth,async (req,res)=>{
  })
  
 
-
+ //endpoint for getting  user
+ router.get("/company/me", auth, async(req,res)=>{
+    try{
+        res.send(req.user)
+    }
+    catch(e){
+        res.status(401).send()
+    }
+ })
 
 //endpoint for deleting users
 router.delete("/company/delete/me", auth, async(req,res)=>{
