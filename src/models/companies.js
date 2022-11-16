@@ -102,6 +102,28 @@ companySchema.statics.findByCredentials = async (email,password) => {
     return user
 }
 
+//userdef function for authentication
+companySchema.statics.findByEmail = async (email) => {
+    // console.log("erwe")
+    const user = await company.findOne({ email })
+    console.log(user,"user")
+    if(!user){
+        throw new Error("unable to find")
+    }
+    return user
+}
+
+//userdef function for authentication
+companySchema.statics.findUserById = async (id) => {
+    console.log("reached schema")
+    const user = await company.findById({_id : id})
+    // console.log(user,"user")
+    if(!user){
+        throw new Error("unable to find")
+    }
+    return user
+}
+
 //using mongoose middleware for hashing passwords
 companySchema.pre("save",async function (next) {
     const user =this
