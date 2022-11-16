@@ -78,6 +78,16 @@ companySchema.methods.genAuthToken = async function(){
 
 }
 
+//userdef function for gen auth token
+companySchema.methods.genAuthToken = async function(){
+    const user=this
+    const token = jwt.sign({_id:user._id.toString()},"thisisseceret",{ expiresIn:"7 days"})
+    user.tokens=user.tokens.concat({token})
+    await user.save()
+    return token
+
+}
+
 //userdef function for authentication
 companySchema.statics.findByCredentials = async (email,password) => {
     console.log("data got to database")
