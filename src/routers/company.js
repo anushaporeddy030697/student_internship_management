@@ -142,6 +142,17 @@ router.get("/companypostedjobs",auth,async (req,res)=>{
  })
  
 
+ //endpoint for getting  user
+ router.get("/company/me", auth, async(req,res)=>{
+    try{
+        res.send(req.user)
+    }
+    catch(e){
+        res.status(401).send()
+    }
+ })
+
+ 
  //endpoint for updating user fields
 router.patch("/company/update/me", auth, async(req,res)=>{
     const _id=req.user._id

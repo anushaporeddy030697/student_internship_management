@@ -78,6 +78,16 @@ companySchema.methods.genAuthToken = async function(){
 
 }
 
+//userdef function for gen auth token
+companySchema.methods.genAuthToken = async function(){
+    const user=this
+    const token = jwt.sign({_id:user._id.toString()},"thisisseceret",{ expiresIn:"7 days"})
+    user.tokens=user.tokens.concat({token})
+    await user.save()
+    return token
+
+}
+
 //userdef function for authentication
 companySchema.statics.findByCredentials = async (email,password) => {
     console.log("data got to database")
@@ -88,6 +98,28 @@ companySchema.statics.findByCredentials = async (email,password) => {
     const isMatched = await bcrypt.compare(password,user.password)
     if(!isMatched){
         throw new Error("Unable to login")
+    }
+    return user
+}
+
+//userdef function for authentication
+companySchema.statics.findByEmail = async (email) => {
+    // console.log("erwe")
+    const user = await company.findOne({ email })
+    console.log(user,"user")
+    if(!user){
+        throw new Error("unable to find")
+    }
+    return user
+}
+
+//userdef function for authentication
+companySchema.statics.findUserById = async (id) => {
+    console.log("reached schema")
+    const user = await company.findById({_id : id})
+    // console.log(user,"user")
+    if(!user){
+        throw new Error("unable to find")
     }
     return user
 }

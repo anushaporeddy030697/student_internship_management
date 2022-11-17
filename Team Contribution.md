@@ -155,6 +155,10 @@ Installed Robo3T for running our webpages in the backend database
      
 11/04/22
 Updated Wiki with Week10 updates
+     
+11/11/22
+Worked on the Student page, validate the jobs posted by the companies,
+Worked on the total jobs available block  in Student page and displayed those jobs in the Grid View.
 
 </a></p>
 
@@ -212,7 +216,10 @@ Manikanta : created a rough sketch on the website
 11-4-2022     
 --> Successfully done the endpoint logout for all the devices but we have to check wheather it is logging off in all the devices or not.     
      
---> Started working on the dynamoDB  database after that we will try to connect to this database.     
+--> Started working on the dynamoDB  database after that we will try to connect to this database.    
+     
+11-11-2022
+-->  Started working on the dashboards for student, company, admin pages.     
 
 </a></p>
 
@@ -260,5 +267,8 @@ We are working on the Funconality of the Forgot password which helps the user to
      
   11-04-2022
 We have sucessfully applied the false condition for the incorrect username and incorrect password
+     
+     11-10-2022
+ To reset the password we have used a third party application called sendGrid.
 
 </a></p>
