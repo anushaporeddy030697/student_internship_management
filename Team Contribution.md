@@ -219,7 +219,10 @@ Manikanta : created a rough sketch on the website
 --> Started working on the dynamoDB  database after that we will try to connect to this database.    
      
 11-11-2022
--->  Started working on the dashboards for student, company, admin pages.     
+-->  Started working on the dashboards for student, company, admin pages.
+     
+11-17-2022
+--> Doing research on the amazon relational database that we have to connect.      
 
 </a></p>
 
@@ -270,5 +273,7 @@ We have sucessfully applied the false condition for the incorrect username and i
      
      11-10-2022
  To reset the password we have used a third party application called sendGrid.
+     11-18-2022
+     we have migrated to Google Smtp server from sendgrid for better funconality.
 
 </a></p>
