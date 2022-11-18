@@ -273,5 +273,7 @@ We have sucessfully applied the false condition for the incorrect username and i
      
      11-10-2022
  To reset the password we have used a third party application called sendGrid.
+     11-18-2022
+     we have migrated to Google Smtp server from sendgrid for better funconality.
 
 </a></p>
