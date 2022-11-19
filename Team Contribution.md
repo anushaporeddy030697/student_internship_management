@@ -57,6 +57,11 @@ supported in selection of web page login design.
 --> updated the wiki
 --> prepared ppt presentation for workshop2
 --> presented presentation of the project and also overview of our progess in the project
+     
+11/18/22
+ 
+--> Updated wiki with week12.
+ 
 </a>
 <p>
 
