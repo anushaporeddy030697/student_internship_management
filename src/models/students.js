@@ -94,6 +94,28 @@ userSchema.statics.findByCredentials = async (email,password) => {
     return user
 }
 
+//userdef function for authentication
+userSchema.statics.findByEmail = async (email) => {
+    // console.log("erwe")
+    const user = await User.findOne({ email })
+    console.log(user,"user")
+    if(!user){
+        throw new Error("unable to find")
+    }
+    return user
+}
+
+//userdef function for authentication
+userSchema.statics.findUserById = async (id) => {
+    console.log("reached schema")
+    const user = await User.findById({_id : id})
+    // console.log(user,"user")
+    if(!user){
+        throw new Error("unable to find")
+    }
+    return user
+}
+
 //using mongoose middleware for hashing passwords
 userSchema.pre("save",async function (next) {
     const user =this
