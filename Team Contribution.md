@@ -227,7 +227,9 @@ Manikanta : created a rough sketch on the website
 -->  Started working on the dashboards for student, company, admin pages.
      
 11-17-2022
---> Doing research on the amazon relational database that we have to connect.      
+--> Doing research on the amazon relational database that we have to connect.    
+11-22-2022
+--> we have to update the dashboards for studentpage , companypage , admin page.
 
 </a></p>
 
