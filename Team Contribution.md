@@ -283,4 +283,6 @@ We have sucessfully applied the false condition for the incorrect username and i
      11-18-2022
      we have migrated to Google Smtp server from sendgrid for better funconality.
 We have sucessfully completed the mail validation for all three pages to reset the password and when registeration is sucessfully completed.
+11-24-22
+we have sucessfully completed the funconality for all the pages.
 </a></p>
