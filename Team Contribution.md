@@ -285,4 +285,6 @@ We have sucessfully applied the false condition for the incorrect username and i
 We have sucessfully completed the mail validation for all three pages to reset the password and when registeration is sucessfully completed.
 11-24-22
 we have sucessfully completed the funconality for all the pages.
+11-25-2022
+we are facing some connectivity issues connecting to the remote database.
 </a></p>
