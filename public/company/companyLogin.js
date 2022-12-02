@@ -1,3 +1,24 @@
+const checklogin = ()=>{
+    const coockievalue=document.cookie
+    console.log(coockievalue,"coockies")
+    if(coockievalue){
+        console.log("test")
+        const coockieArray=coockievalue.split(";")
+        const auth=coockieArray[0].split("=")
+        const type=coockieArray[1].split("=")
+        console.log("auth ",auth)
+        console.log("type ",type)
+        if(auth[1] && type[1] ==="company"){
+            location.href="/company/companyindex.html"
+        }
+    
+        
+    }
+   
+    
+}
+checklogin()
+
 const $companyLoginForm=document.getElementById("company-login")
 
 $companyLoginForm.addEventListener('submit',async (e)=>{

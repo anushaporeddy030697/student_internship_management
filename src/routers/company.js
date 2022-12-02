@@ -3,8 +3,14 @@ const express=require("express")
 const auth=require("../middleWare/companyauth")
 const job = require("../models/jobs")
 const applications = require("../models/applications")
-const router = new express.Router()
+const qualified = require("../models/qualified")
+const selected = require("../models/selected")
+const rejected = require("../models/rejected")
+const jwt=require("jsonwebtoken")
+const {sendPasswordEmail,sendWelcomeEmail}=require("../emails/account")
 
+const router = new express.Router()
+const Jwt_Secret="thisisseceret"
 
 router.get("/company/test",(req,res)=>{
     res.send({
@@ -18,7 +24,10 @@ router.post("/company",async(req,res)=>{
     try{
      await user.save()
      const token = await user.genAuthToken()
-     res.cookie("Authorization",token)
+     console.log("token",token)
+     sendWelcomeEmail(user.email)
+    //  res.cookie("Authorization",token)
+    //  res.cookie("type","company")     
      res.status(201).send({user,token})
     }catch(e){
      res.status(400).send({error:"unable to register"})
@@ -33,12 +42,17 @@ router.post("/company",async(req,res)=>{
     try{
     const user = await company.findByCredentials(req.body.email, req.body.password)
     console.log("data got user ")
+    if(!user.block){
     const token = await user.genAuthToken()
     res.cookie("Authorization",token)
+    res.cookie("type","company")     
     res.send({user,token})
     }
+    else res.status(400).send({error:"User blocked! Don't worry! Contact Admin!"})
+}
+
     catch(e){
-        res.status(400).send({error:"unable to login"})
+        res.status(400).send({error:e.message})
     }
 
  })
@@ -51,6 +65,24 @@ router.post("/company",async(req,res)=>{
     }catch(e){
      res.status(400).send({error:e})
     }
+ })
+ router.get("/company/shortlistjobscount",auth,async(req,res)=>{
+    var applicationsCount = 0 
+     try{
+        let i = 0
+        const companyid = req.query.companyid
+        const jobs = await job.find({postedby:companyid}).select("_id")
+        let newJobs = []
+        for(i=0;i<jobs.length;i++){
+            newJobs[i] = jobs[i]._id.toString()
+        }
+         const application = await qualified.find()  
+         var filteredApplications = application.filter((appli)=>newJobs.includes(appli.jobid.toString()))
+        applicationsCount = filteredApplications.length
+         res.status(200).send({applicationsCount})
+     }catch(e){
+         res.status(400).send({error:e})
+     }
  })
  router.get("/applications",auth,async(req,res)=>{
     var applicationsCount = 0 
@@ -70,7 +102,59 @@ router.post("/company",async(req,res)=>{
          res.status(400).send({error:e})
      }
  })
-  
+  router.delete("/reject",auth,async(req,res)=>{
+    try{
+            const applicationId = req.query.applicationid
+            const fetchedApplication = await applications.findById(applicationId)
+            const deletedApplication =await applications.deleteOne({_id:applicationId})
+            const newRejected = new rejected({jobid:fetchedApplication.jobid,studentid:fetchedApplication.studentid,firstname:fetchedApplication.firstname,lastname:fetchedApplication.lastname,email:fetchedApplication.email,age:fetchedApplication.age,gender:fetchedApplication.gender,universityid:fetchedApplication.universityid,phone:fetchedApplication.phone,resume:fetchedApplication.resume})
+            await newRejected.save()
+            res.status(200).send({response:"success"})
+    }
+    catch(e){
+        res.status(400).send({error:"error"+e})
+    }
+  }) 
+  router.delete("/shortlistreject",auth,async(req,res)=>{
+    try{
+            const applicationId = req.query.applicationid
+            const fetchedApplication = await qualified.findById(applicationId)
+            const deletedApplication =await qualified.deleteOne({_id:applicationId})
+            const newRejected = new rejected({jobid:fetchedApplication.jobid,studentid:fetchedApplication.studentid,firstname:fetchedApplication.firstname,lastname:fetchedApplication.lastname,email:fetchedApplication.email,age:fetchedApplication.age,gender:fetchedApplication.gender,universityid:fetchedApplication.universityid,phone:fetchedApplication.phone,resume:fetchedApplication.resume})
+            await newRejected.save()
+            res.status(200).send({response:"success"})
+    }
+    catch(e){
+        res.status(400).send({error:"error"+e})
+    }
+  }) 
+  router.delete("/shortlistqualified",auth,async(req,res)=>{
+    try{
+            const applicationId = req.query.applicationid
+            const fetchedApplication = await qualified.findById(applicationId)
+            const deletedApplication =await qualified.deleteOne({_id:applicationId})
+            const newSelected = new selected({jobid:fetchedApplication.jobid,studentid:fetchedApplication.studentid,firstname:fetchedApplication.firstname,lastname:fetchedApplication.lastname,email:fetchedApplication.email,age:fetchedApplication.age,gender:fetchedApplication.gender,universityid:fetchedApplication.universityid,phone:fetchedApplication.phone,resume:fetchedApplication.resume})
+            await newSelected.save()
+            res.status(200).send({response:"Selected for further rounds successfully!"})
+    }
+    catch(e){
+        res.status(400).send({error:"error"+e})
+    }
+  }) 
+  router.patch("/qualified",auth,async(req,res)=>{
+    try{
+        const applicationId = req.query.applicationid
+        const fetchedApplication = await applications.findById(applicationId)
+        const deletedAcknowledgement = await applications.deleteOne({_id:applicationId})
+        const newQualified = new qualified({jobid:fetchedApplication.jobid,studentid:fetchedApplication.studentid,firstname:fetchedApplication.firstname,lastname:fetchedApplication.lastname,email:fetchedApplication.email,age:fetchedApplication.age,gender:fetchedApplication.gender,universityid:fetchedApplication.universityid,phone:fetchedApplication.phone,resume:fetchedApplication.resume})
+        await newQualified.save()
+        res.status(200).send({response:"success"})
+
+    }
+    catch(e){
+        console.log(e)
+    }
+  })
  router.get("/viewapplications",auth,async(req,res)=>{
     try{
          let i = 0
@@ -81,6 +165,27 @@ router.post("/company",async(req,res)=>{
             newJobs[i] = jobs[i]._id.toString()
         }
          const application = await applications.find()  
+         var filteredApplications = application.filter((appli)=>newJobs.includes(appli.jobid.toString()))
+        
+        
+    
+       res.send(filteredApplications)
+    } 
+         
+     catch(e){
+         res.status(400).send({error:e})
+     }
+ })
+ router.get("/viewshortlists",auth,async(req,res)=>{
+    try{
+         let i = 0
+        const companyid = req.query.companyid
+        const jobs = await job.find({postedby:companyid}).select("_id")
+        let newJobs = []
+        for(i=0;i<jobs.length;i++){
+            newJobs[i] = jobs[i]._id.toString()
+        }
+         const application = await qualified.find()  
          var filteredApplications = application.filter((appli)=>newJobs.includes(appli.jobid.toString()))
         
         
@@ -112,6 +217,7 @@ router.get("/companypostedjobs",auth,async (req,res)=>{
         })
         await req.user.save()
         res.clearCookie('Authorization')
+        res.clearCookie('type')
         res.send()
      }
      catch(e){
@@ -119,17 +225,17 @@ router.get("/companypostedjobs",auth,async (req,res)=>{
      }
  })
 
-  //endpoint for logout all devices
-  router.post("/company/logoutall", auth, async(req,res)=>{
-    try{
-       req.user.tokens=[]
-       await req.user.save()
-       res.send()
-    }
-    catch(e){
-       res.status(400).send()
-    }
-})
+ //endpoint for logout all devices
+ router.post("/company/logoutall", auth, async(req,res)=>{
+     try{
+        req.user.tokens=[]
+        await req.user.save()
+        res.send()
+     }
+     catch(e){
+        res.status(400).send()
+     }
+ })
  
  //endpoint for getting  user
  router.get("/company/me", auth, async(req,res)=>{
@@ -142,17 +248,6 @@ router.get("/companypostedjobs",auth,async (req,res)=>{
  })
  
 
- //endpoint for getting  user
- router.get("/company/me", auth, async(req,res)=>{
-    try{
-        res.send(req.user)
-    }
-    catch(e){
-        res.status(401).send()
-    }
- })
-
- 
  //endpoint for updating user fields
 router.patch("/company/update/me", auth, async(req,res)=>{
     const _id=req.user._id
@@ -190,6 +285,59 @@ router.delete("/company/delete/me", auth, async(req,res)=>{
     }
 })
 
-//emnpoin
+
+//endpoint for company password reset
+router.post("/company/password-reset", async(req,res)=>{
+    const email=req.body.email
+    console.log("Email ",email)
+    try{
+        const user = await company.findByEmail(email)
+        console.log(user,"user in route")
+        const secret=Jwt_Secret + user.password
+        console.log(secret)
+        const payload={
+            email:user.email,
+            id:user.id
+        }
+        console.log(payload," payload ")
+        const token=jwt.sign(payload,secret,{expiresIn:'15m'})
+        // console.log(token," token")
+        const link=`http://localhost:4000/resetpassword.html?id=${user.id}&token=${token}&type=company`
+        // console.log(link)
+        sendPasswordEmail(email,link)
+        console.log("email sent")
+        // console.log("secret",secret)
+        // console.log("token before mail",token)
+        res.send({success:"link sent"})
+    }
+    catch(e){
+        res.send({error:"unable to reset password"})
+    }
+})
+
+
+router.post("/company/reset-password", async(req,res)=>{
+    const { id, token } =req.body
+    const {password}=req.body
+    console.log(id,"id")
+    try {
+        console.log("user got it")
+        const user = await company.findUserById(id)
+        console.log(user)
+        const secret=Jwt_Secret + user.password
+        console.log("seceret after mail",secret)
+        console.log("token after mail",token)
+        const payload=jwt.verify(token,secret)
+        console.log("payload ",payload)
+        // console.log("user ",user)
+        user.password=password
+        await user.save()
+        console.log("success")
+        res.send({success:"true"})
+    } catch (e) {
+        res.status(400).send(e)
+    }
+})
+
 
 module.exports = router

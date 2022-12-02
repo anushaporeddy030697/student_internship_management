@@ -18,11 +18,23 @@ const jobSchema = mongoose.Schema({
     },
     title:{
         type:String,
-        
         required:true,
         trim:true,
-        
-        
+    },
+    worktype:{
+        type:String,
+        required:true,
+        trim:true,   
+    },
+    emptype:{
+        type:String,
+        required:true,
+        trim:true,   
+    },
+    empbenefits:{
+        type:String,
+        required:true,
+        trim:true,   
     },
     requirements:{
         type:String,
@@ -38,8 +50,12 @@ const jobSchema = mongoose.Schema({
     postedby:{
         type:ObjectId,
         ref:'company'
+    }, 
+    aboutcompany:{
+        companyData: Buffer,
+        contentType: String
     }
-   
+    
 })
 
 //userdef function for hiding private data
@@ -51,7 +67,7 @@ jobSchema.methods.toJSON = function(){
 } 
 
 
-//creating a company model
+//creating a job model
 const job = mongoose.model('job',jobSchema)
 
 module.exports=job

@@ -40,11 +40,13 @@ window.onload=async()=>{
         
     }).then((res) => res.json())
      
-    const mappedUsers1 = result.map((application, index) => {
+    const mappedUsers1 = result.applications.map((application, index) => {
         
         return `<div class="job">
         <p >First name: ${application.firstname} </p>
         <p>Last Name: ${application.lastname}</p>
+        <p> Applied Company: ${result.newResults[index].companyname}</p>
+        <p>Applied job Title: ${result.newResults[index].title}</p>
         <p>Email: ${application.email} </p>
         <p>age: ${application.age} years</p>
         <p>gender: ${application.gender} </p>
@@ -54,11 +56,13 @@ window.onload=async()=>{
         <button class="btn"><i class="fa-solid fa-download fa-1x"></i><a innerHtml="download resume"  download="resume.pdf" href="data:application/octet-stream;base64,${application.resume.resumeData.toString('base64')}"> Download resume</a></button><br/>       
       </div>`;
       });
-    const mappedUsers2 = result1.map((application, index) => {
+    const mappedUsers2 = result1.applications.map((application, index) => {
 
         return `<div class="job">
         <p >First name: ${application.firstname} </p>
         <p>Last Name: ${application.lastname}</p>
+        <p> Applied Company: ${result.newResults[index].companyname}</p>
+        <p>Applied job Title: ${result.newResults[index].title}</p>
         <p>Email: ${application.email} </p>
         <p>age: ${application.age} years</p>
         <p>gender: ${application.gender} </p>
@@ -68,11 +72,13 @@ window.onload=async()=>{
         <button class="btn"><i class="fa-solid fa-download fa-1x"></i><a innerHtml="download resume"  download="resume.pdf" href="data:application/octet-stream;base64,${application.resume.resumeData.toString('base64')}"> Download resume</a></button><br/>       
       </div>`;
       });
-    const mappedUsers3 = result2.map((application, index) => {
+    const mappedUsers3 = result2.applications.map((application, index) => {
 
         return `<div class="job">
         <p >First name: ${application.firstname} </p>
         <p>Last Name: ${application.lastname}</p>
+        <p> Applied Company: ${result.newResults[index].companyname}</p>
+        <p>Applied job Title: ${result.newResults[index].title}</p>
         <p>Email: ${application.email} </p>
         <p>age: ${application.age} years</p>
         <p>gender: ${application.gender} </p>
@@ -82,11 +88,13 @@ window.onload=async()=>{
         <button class="btn"><i class="fa-solid fa-download fa-1x"></i><a innerHtml="download resume"  download="resume.pdf" href="data:application/octet-stream;base64,${application.resume.resumeData.toString('base64')}"> Download resume</a></button><br/>       
       </div>`;
       });
-    const mappedUsers4 = result3.map((application, index) => {
+    const mappedUsers4 = result3.applications.map((application, index) => {
 
         return `<div class="job">
         <p >First name: ${application.firstname} </p>
         <p>Last Name: ${application.lastname}</p>
+        <p> Applied Company: ${result.newResults[index].companyname}</p>
+        <p>Applied job Title: ${result.newResults[index].title}</p>
         <p>Email: ${application.email} </p>
         <p>age: ${application.age} years</p>
         <p>gender: ${application.gender} </p>

@@ -5,6 +5,10 @@ function verifyPassword(password1,password2) {
         document.getElementById("message").innerHTML = "password and confirm password should be same";
         return false
     }
+    if(password1.length < 8){
+        document.getElementById("message").innerHTML = "password length should be longer than or equal to 8 characters";
+        return false
+    }
     return true
    
   }  
@@ -42,6 +46,7 @@ $adminRegForm.addEventListener('submit',async (e)=>{
         if (!result.error) {
             localStorage.setItem('token', result.token)
             localStorage.setItem('name',result.user.firstname)
+            localStorage.setItem('adminid',result.user._id)
             location.href="/admin/adminLogin.html"
             alert("success")
         } else {

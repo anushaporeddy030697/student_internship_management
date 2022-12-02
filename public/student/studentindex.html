@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/auth.js"></script>
   </head>
-  <body>
+  <body> 
     <header id="home">
       <nav id="navbar">
         <div class="container">
@@ -17,7 +17,7 @@
           </h1>
           <ul>
             <li><a class="current" href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="profile.html">Profile</a></li>
             <li><a class="logout-btn" href="#">Logout</a></li>
           </ul>
         </div>
@@ -27,11 +27,11 @@
       <h1 id="welcome" class="name-welcome">welcome {{name}}</h1>
       <div class="boxes py6">
         <div class="totaljobs">
-          <h2>0</h2>
+          <h2 id="totaljobscount">0</h2>
           <h3>Total jobs availble</h3>
         </div>
         <div class="totalapplied">
-          <h2>0</h2>
+          <h2 id="appliedjobscount">0</h2>
           <h3>No of jobs applied</h3>
         </div>
       </div>
@@ -39,3 +39,4 @@
     <script src="./js/studentindex.js"></script>
   </body>
 </html>
+ 

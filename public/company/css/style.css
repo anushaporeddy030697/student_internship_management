@@ -2,7 +2,7 @@
 /* Reset everything */
 *{
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 /* Main styleing */
@@ -145,6 +145,7 @@ p{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .boxes .totalapplied{
@@ -156,17 +157,27 @@ p{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+}
+.boxes .totalshortlisted{
+    height: 20rem;
+    width: 20rem;
+    background: rgb(198, 185, 90);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 .name-welcome{
     text-align: center;
 }
 
-.jobs{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 30px;
+#jobs{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
  .job{
@@ -184,7 +195,29 @@ p{
     padding:10px;
     background: #fff;
     color: #333 ;
+    margin-bottom: 5px;
 }
 .totaljobs{
     cursor: pointer;
+}
+
+#profiles{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.profile {
+    background: rgb(113, 156, 219);
+    color: #fff;
+    display: float;
+    /* flex-direction: row; */
+    align-content: center;
+    justify-content: center;
+    padding: 3rem;
+    /* text-align: center; */
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

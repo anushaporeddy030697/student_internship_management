@@ -52,6 +52,10 @@ const userSchema = mongoose.Schema({
         required:true,
        
     },
+    block: {
+        type: Boolean,
+        default: false
+    },
     tokens:[
        {
            token:{
@@ -85,11 +89,11 @@ userSchema.methods.genAuthToken = async function(){
 userSchema.statics.findByCredentials = async (email,password) => {
     const user = await User.findOne({ email })
     if(!user){
-        throw new Error("unable to login")
+        throw new Error("Email is incorrect")
     }
     const isMatched = await bcrypt.compare(password,user.password)
     if(!isMatched){
-        throw new Error("Unable to login")
+        throw new Error("password is incorrect")
     }
     return user
 }
@@ -119,7 +123,7 @@ userSchema.statics.findUserById = async (id) => {
 //using mongoose middleware for hashing passwords
 userSchema.pre("save",async function (next) {
     const user =this
-    
+    console.log("user data received")
    if(user.isModified('password')){
        user.password=await bcrypt.hash(user.password,8)
 

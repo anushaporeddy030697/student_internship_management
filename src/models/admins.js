@@ -77,14 +77,38 @@ adminSchema.methods.genAuthToken = async function(){
 adminSchema.statics.findByCredentials = async (email,password) => {
     const user = await admin.findOne({ email })   
     if(!user){
-        throw new Error("unable to login")
+        throw new Error("Email is incorrect")
     }
     const isMatched = await bcrypt.compare(password,user.password)
     if(!isMatched){
-        throw new Error("Unable to login")
+        throw new Error("password is incorrect")
     }
     return user
 }
+
+
+//userdef function for authentication
+adminSchema.statics.findByEmail = async (email) => {
+    // console.log("erwe")
+    const user = await admin.findOne({ email })
+    console.log(user,"user")
+    if(!user){
+        throw new Error("unable to find")
+    }
+    return user
+}
+
+//userdef function for authentication
+adminSchema.statics.findUserById = async (id) => {
+    console.log("reached schema")
+    const user = await admin.findById({_id : id})
+    // console.log(user,"user")
+    if(!user){
+        throw new Error("unable to find")
+    }
+    return user
+}
+
 
 //using mongoose middleware for hashing passwords
 adminSchema.pre("save",async function (next) {

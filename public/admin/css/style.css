@@ -1,0 +1,223 @@
+
+/* Reset everything */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+/* Main styleing */
+
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+   
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+/* utilities  */
+.container{
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+  
+}
+
+.text-primary{
+    color: #ad3d3d;
+}
+
+.lead{
+    font-size: 20px;
+    color: rgb(246, 245, 250);
+}
+
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #f7c08a;
+    color: #333;
+}
+
+.btn-light {
+    background: #fff;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-primary{
+    background: #f7c08a;
+    color: #333;
+}
+
+.clr{
+    clear: both;
+ }
+ 
+ .l1{
+    font-size: 40px;
+ }
+ /* padding */
+ .py1{ padding: 10px 0;}
+ .py2{ padding: 20px 0;}
+ .py3{ padding: 30px 0;}
+ .py4{ padding: 40px 0;}
+ .py5{ padding: 50px 0;}
+ .py6{ padding: 60px 0;}
+
+
+/* Nav bar */
+#navbar {
+    background: #333;
+    color: #FFF;
+    overflow: auto;
+
+}
+
+#navbar a{
+    color: #fff;
+}
+
+#navbar .logo{
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+    
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boxes .totaljobs{
+    height: 20rem;
+    width: 20rem;
+    background: rgb(142, 236, 135);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boxes .totalapplied{
+    height: 20rem;
+    width: 20rem;
+    background: rgb(198, 112, 112);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.boxes .totalcompanies{
+    height: 20rem;
+    width: 20rem;
+    background: rgb(198, 185, 90);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.name-welcome{
+    text-align: center;
+}
+
+#jobs{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+ .job{
+    background: #333;
+    color: #fff;
+    display: float;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+ .btn{
+    padding:10px;
+    background: #fff;
+    color: #333 ;
+    margin-bottom: 5px;
+}
+.totaljobs{
+    cursor: pointer;
+}
+
+#profiles{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.profile {
+    background: rgb(113, 156, 219);
+    color: #fff;
+    display: float;
+    /* flex-direction: row; */
+    align-content: center;
+    justify-content: center;
+    padding: 3rem;
+    /* text-align: center; */
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

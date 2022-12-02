@@ -190,3 +190,24 @@ p{
 .totaljobs{
     cursor: pointer;
 }
+
+#profiles{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.profile {
+    background: rgb(113, 156, 219);
+    color: #fff;
+    display: float;
+    /* flex-direction: row; */
+    align-content: center;
+    justify-content: center;
+    padding: 3rem;
+    /* text-align: center; */
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

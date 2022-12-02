@@ -5,6 +5,10 @@ function verifyPassword(password1,password2) {
         document.getElementById("message").innerHTML = "password and confirm password should be same";
         return false
     }
+    if(password1.length < 8){
+        document.getElementById("message").innerHTML = "password length should be longer than or equal to 8 characters";
+        return false
+    }
     return true
    
   }  

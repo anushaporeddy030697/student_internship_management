@@ -17,7 +17,7 @@
           </h1>
           <ul>
             <li><a class="current" href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="profile.html">Profile</a></li>
             <li><a class="logout-btn" href="#">Logout</a></li>
           </ul>
         </div>
@@ -27,21 +27,23 @@
       <h1 id="welcome" class="name-welcome">welcome {{name}}</h1>
       <div class="boxes py6">
         <div class="totalapplied">
-         <h2>0</h2>
-          <h3>Total No of students</h3> 
+         <h2 id="totalstudentscount">0</h2>
+          <h3>Total No of Students</h3> 
         </div>
-        <div class="totalcompanies">
-          <h2>0</h2>
+        <div class="totalcompanies" style=" cursor:pointer">
+          <h2 id="totalcompaniescount">0</h2>
           <h3>Total No of companies</h3> 
         </div>
         <div class="totaljobs">
-          <h2>0</h2>
+          <h2 id="totaljobscount">0</h2>
           <h3>Total No Of Jobs</h3>
         </div>
       </div>
-    </div>
+    </div> 
 
     <script src="./js/adminindex.js"></script>
+    <script src="./js/authcheck.js"></script>
+
     
   </body>
 </html>

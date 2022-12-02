@@ -1,9 +1,14 @@
 const admin=require("../models/admins")
 const express=require("express")
 const auth=require("../middleWare/adminauth")
+const student = require("../models/students")
+const job = require("../models/jobs")
+const company = require("../models/companies")
+const jwt=require("jsonwebtoken")
+const {sendPasswordEmail,sendWelcomeEmail}=require("../emails/account")
 
 const router = new express.Router()
-
+const Jwt_Secret="thisisseceret"
 
 router.get("/admin/test",(req,res)=>{
     res.send({
@@ -18,13 +23,92 @@ router.post("/admin",async(req,res)=>{
     try{
      await user.save()
      const token = await user.genAuthToken()
-     res.cookie("Authorization",token)
+     sendWelcomeEmail(user.email)
+    //  res.cookie("Authorization",token)
+    //  res.cookie("type","admin")     
      res.status(201).send({user,token})
     }catch(e){
      res.status(400).send({error:"unable to register"})
     }
   
  
+ })
+ router.post("/adminjobs",auth,async(req,res)=>{
+    job.find().then((jobs)=>{
+        //console.log(jobs)
+        res.status(200).json(jobs)
+
+    }).catch((err)=>{
+        // console.log(err)
+        res.status(400).send({error:"unable to get jobs"})
+    })
+ }) 
+ router.post("/viewcompanies",auth,(req,res)=>{
+    company.find().then((companies)=>{
+        res.status(200).json(companies)
+    }).catch((err)=>{
+        res.status(400).send({error:"unable to get companies"})
+    })
+ })
+ router.patch("/block",auth,async(req,res)=>{
+    try{
+       const companyid = req.query.companyid
+    //    console.log("-------")
+    //    console.log(req.body)
+    //    console.log("-------")
+
+       const companyDetails = await company.findByIdAndUpdate(companyid,req.body)
+        res.status(200).send(companyDetails)
+    }catch(e){
+        res.status(400).send({error:e})
+    }
+})
+ router.patch("/studentblock",auth,async(req,res)=>{
+    try{
+       const studentid = req.query.studentid
+    //    console.log("-------")
+    //    console.log(req.body)
+    //    console.log("-------")
+
+       const studentDetails = await student.findByIdAndUpdate(studentid,req.body)
+        res.status(200).send(studentDetails)
+    }catch(e){
+        res.status(400).send({error:e})
+    }
+})
+ router.post("/viewstudents",auth,(req,res)=>{
+    student.find().then((students)=>{
+        res.status(200).json(students)
+    }).catch((err)=>{
+        res.status(400).send({error:"unable to get students"})
+    })
+ })
+ router.get("/totalstudentscount",auth,async(req,res)=>{
+    try{
+    
+    const studentsCount  = await student.find().count()
+     res.status(200).send({studentsCount})
+    }catch(e){
+     res.status(400).send({error:e})
+    }
+ })
+ router.get("/totaljobscount",auth,async(req,res)=>{
+    try{
+    
+    const jobsCount  = await job.find().count()
+     res.status(200).send({jobsCount})
+    }catch(e){
+     res.status(400).send({error:e})
+    }
+ })
+ router.get("/totalcompaniescount",auth,async(req,res)=>{
+    try{
+    
+    const companiesCount  = await company.find().count()
+     res.status(200).send({companiesCount})
+    }catch(e){
+     res.status(400).send({error:e})
+    }
  })
 
  //endpoint for login users
@@ -35,10 +119,11 @@ router.post("/admin",async(req,res)=>{
     const user = await admin.findByCredentials(req.body.email, req.body.password)    
     const token = await user.genAuthToken()   
     res.cookie("Authorization",token)
+    res.cookie("type","admin")     
     res.send({user,token})
     }
     catch(e){
-        res.status(400).send({error:"unable to login"})
+        res.status(400).send({error:e.message})
     }
 
  })
@@ -51,10 +136,12 @@ router.post("/admin",async(req,res)=>{
             return token.token != req.token
         })
         await req.user.save()
+        res.clearCookie('Authorization')
+        res.clearCookie('type')
         res.send()
      }
      catch(e){
-         res.status(500).send(e)
+         res.status(500).send({error:"unable to logout"})
      }
  })
 
@@ -117,5 +204,55 @@ router.delete("/admin/delete/me", auth, async(req,res)=>{
         res.status(400).send(e)
     }
 })
+
+
+//endpoint for student password reset
+router.post("/admin/password-reset", async(req,res)=>{
+    const email=req.body.email
+    console.log("Email ",email)
+    try{
+        const user = await admin.findByEmail(email)
+        console.log(user,"user in route")
+        const secret=Jwt_Secret + user.password
+        const payload={
+            email:user.email,
+            id:user.id
+        }
+        const token=jwt.sign(payload,secret,{expiresIn:'15m'})
+        const link=`http://localhost:4000/resetpassword.html?id=${user.id}&token=${token}&type=admin`
+        sendPasswordEmail(email,link)
+        console.log("secret",secret)
+        console.log("token before mail",token)
+        res.send({success:"link sent"})
+    }
+    catch(e){
+        res.send({error:"unable to reset password"})
+    }
+})
+
+
+router.post("/admin/reset-password", async(req,res)=>{
+    const { id, token } =req.body
+    const {password}=req.body
+    console.log(id,"id")
+    try {
+        console.log("user got it")
+        const user = await admin.findUserById(id)
+        console.log(user)
+        const secret=Jwt_Secret + user.password
+        console.log("seceret after mail",secret)
+        console.log("token after mail",token)
+        const payload=jwt.verify(token,secret)
+        console.log("payload ",payload)
+        // console.log("user ",user)
+        user.password=password
+        await user.save()
+        console.log("success")
+        res.send({success:"true"})
+    } catch (e) {
+        res.status(400).send(e)
+    }
+})
+
 
 module.exports = router

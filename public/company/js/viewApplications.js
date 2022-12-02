@@ -23,15 +23,20 @@ window.onload=async()=>{
         <p>Age: ${application.age}</p>
         <p>Phone: ${application.phone}</p>
         <p>Gender: ${application.gender}</p>
-        <button class="btn"><i class="fa-solid fa-download fa-1x"></i><a innerHtml="Download resume"  download="resume.pdf" href="data:application/octet-stream;base64,${application.resume.resumeData.toString('base64')}"> Download Resume</a></button><br />
+        <button class="btn" ><i class="fa-solid fa-download fa-1x"></i><a innerHtml="Download resume"  download="resume.pdf" href="data:application/octet-stream;base64,${application.resume.resumeData.toString('base64')}"> Download Resume</a></button><br />
 
-      
+        <button class="btn"  onclick="window.location.href='qualified.html?applicationid=${application._id}'" type="submit" value="Submit" > Qualify </button>    
+        <button class="btn"  onclick="window.location.href='rejected.html?applicationid=${application._id}'" type="submit" value="Submit" > Reject </button> 
           
       </div>`;
       });
-
+      if(mappedUsers.length>0)
       usersContainer.innerHTML = mappedUsers
-
+      else{
+           alert("Applications Empty") 
+        //    usersContainer.innerHTML = "<h1>There are no pending applications to review, Please comeback later!</h1>"
+           location.href="/company/companyindex.html"
+      }
 }
  
 

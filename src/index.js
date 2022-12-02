@@ -8,6 +8,7 @@ const companyRouter=require("./routers/company")
 const admin=require("./models/admins")
 const adminRouter=require("./routers/admin")
 const jobsRouter = require('./routers/job')
+const contactRouter = require('./routers/contact')
 
 const app=express()
 
@@ -20,6 +21,7 @@ app.use(studentRouter)
 app.use(companyRouter)
 app.use(adminRouter)
 app.use(jobsRouter)
+app.use(contactRouter)
 
 app.listen(port,()=>{
     console.log("server is up and running on ",port)

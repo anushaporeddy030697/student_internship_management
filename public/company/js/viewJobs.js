@@ -32,7 +32,14 @@ window.onload=async()=>{
       </div>`;
       });
 
-      usersContainer.innerHTML = mappedUsers
+      if(mappedUsers.length>0){
+        usersContainer.innerHTML = mappedUsers
+    }
+      else{
+        alert("Applications Empty") 
+        //    usersContainer.innerHTML = "<h1>There are no pending applications to review, Please comeback later!</h1>"
+           location.href="/company/companyindex.html"
+      }
 
 }
  
