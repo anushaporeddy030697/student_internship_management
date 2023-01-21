@@ -315,6 +315,9 @@ We have sucessfully completed the mail validation for all three pages to reset t
 we have sucessfully completed the funconality for all the pages.
 11-25-2022
 we are facing some connectivity issues connecting to the remote database.
+
+1-20-2023
+As per the client requirments we are adding a chat box for student to provide a communication with admins.
 </a></p>
 
 
