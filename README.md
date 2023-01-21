@@ -259,6 +259,9 @@ Manikanta : created a rough sketch on the website
 11-22-2022
 --> we have to update the dashboards for studentpage , companypage , admin page.
 
+01-20-2023
+--> As per clients requirements we are providing chart box in students page.
+
 </a></p>
 
 
