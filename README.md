@@ -95,6 +95,9 @@ supported in selection of web page login design.
 --> Discussed with team regarding admin role misusage by the users.
 
 --> Two different ideas found and not yet decided to choose which is the best
+
+--> Two Ideas: 1) To provide admin directly the login credentials by avoiding registration page.
+               2) To add super admin to manage all the functionalities of admins
  
 </a>
 <p>
