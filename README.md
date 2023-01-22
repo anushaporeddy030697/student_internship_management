@@ -192,6 +192,10 @@ Updated Wiki with Week10 updates
 11/11/22
 Worked on the Student page, validate the jobs posted by the companies,
 Worked on the total jobs available block  in Student page and displayed those jobs in the Grid View.
+     
+01/18/23
+Researched about free for dev for deploying our application on remote
+  
 
 </a></p>
 
