@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <div id = "ready">
+   <div class = "message"> Hello. I am JavaScript </div>
+   <button class = "btn">OK</button>
+   </div>
+   <input type = "button" value = "Click Me" onclick = "myfunction();"
+   />
+</body>
+<head>
+   <script>
+   function myfunction(note, done) { 
+      var box = $("#ready"); 
+      box.find(".message").text(note);
+      box.find(".btn").unbind().click(function() { 
+         box.hide();
+      });
+      box.find(".btn").click(done); box.show();
+   }
+   </script>
