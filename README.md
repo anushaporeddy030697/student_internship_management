@@ -262,6 +262,8 @@ Manikanta : created a rough sketch on the website
 01-20-2023
 --> As per clients requirements we are providing chart box in students page.
 
+01-22-2023
+--> In order to help students find answers to their queries, we are creating a list of commonly asked questions (FAQs).
 </a></p>
 
 
