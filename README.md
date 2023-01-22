@@ -321,6 +321,8 @@ we are facing some connectivity issues connecting to the remote database.
 
 1-20-2023
 As per the client requirments we are adding a chat box for student to provide a communication with admins.
+1-22-2023
+we are working on the FAQ'S which provides the Question and answers for the students to clarify their doubts
 </a></p>
 
 
