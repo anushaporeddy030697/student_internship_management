@@ -212,6 +212,9 @@ Worked on the total jobs available block  in Student page and displayed those jo
      
 01/18/23
 Researched about free for dev for deploying our application on remote
+     
+01/20/23 --
+Discussed about search bar and chatbox and need to collect the information for adding search bar in student to search about particular job
   
 
 </a></p>
