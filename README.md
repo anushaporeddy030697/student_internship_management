@@ -216,6 +216,8 @@ Researched about free for dev for deploying our application on remote
 01/20/23 --
 Discussed about search bar and chatbox and need to collect the information for adding search bar in student to search about particular job
   
+01/23/23-- Worked on the Search bar functionality in student page to filter interested jobs 
+
 
 </a></p>
 
