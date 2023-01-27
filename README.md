@@ -161,6 +161,9 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 -->searching in the internet to make search bar functionality.
      
+ 1/27/2023
+     
+ --> Added the search bar functionality to filter the data about jobs in the student page.    
 
 </a></p>
 
