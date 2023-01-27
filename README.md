@@ -225,6 +225,7 @@ Discussed about search bar and chatbox and need to collect the information for a
   
 01/23/23-- Worked on the Search bar functionality in student page to filter interested jobs 
 
+01/25/23-- Discussed about adding more filter components to shortlist jobs based on those filters like company name, job title, passedout year etc
 
 </a></p>
 
