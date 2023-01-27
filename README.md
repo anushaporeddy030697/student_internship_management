@@ -359,6 +359,8 @@ As per the client requirments we are adding a chat box for student to provide a 
 we are working on the FAQ'S which provides the Question and answers for the students to clarify their doubts
 1-26-2023
 We are working on the funconality of the contact us form  so students can send their questions via mail
+1-27-2023
+We have sucessfully made the contact form funconality the message can be seen in the database
 </a></p>
 
 
