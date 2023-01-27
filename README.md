@@ -99,6 +99,9 @@ supported in selection of web page login design.
 --> Two Ideas: 1) To provide admin directly the login credentials by avoiding registration page.
                2) To add super admin to manage all the functionalities of admins
  
+1/27/23
+     
+--> Done with admin role. I have eliminated the registration for admin. Admin can directly get login credentials.
 </a>
 <p>
 
@@ -158,6 +161,9 @@ I made rough figure on the paper for login pages design flow chart and dashboard
 
 -->searching in the internet to make search bar functionality.
      
+ 1/27/2023
+     
+ --> Added the search bar functionality to filter the data about jobs in the student page.    
 
 </a></p>
 
@@ -216,6 +222,8 @@ Researched about free for dev for deploying our application on remote
 01/20/23 --
 Discussed about search bar and chatbox and need to collect the information for adding search bar in student to search about particular job
   
+01/23/23-- Worked on the Search bar functionality in student page to filter interested jobs 
+
 
 </a></p>
 
@@ -354,6 +362,8 @@ As per the client requirments we are adding a chat box for student to provide a 
 we are working on the FAQ'S which provides the Question and answers for the students to clarify their doubts
 1-26-2023
 We are working on the funconality of the contact us form  so students can send their questions via mail
+1-27-2023
+We have sucessfully made the contact form funconality the message can be seen in the database
 </a></p>
 
 
