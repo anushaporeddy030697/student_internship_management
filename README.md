@@ -99,6 +99,9 @@ supported in selection of web page login design.
 --> Two Ideas: 1) To provide admin directly the login credentials by avoiding registration page.
                2) To add super admin to manage all the functionalities of admins
  
+1/27/23
+     
+--> Done with admin role. I have eliminated the registration for admin. Admin can directly get login credentials.
 </a>
 <p>
 
