@@ -288,6 +288,9 @@ Manikanta : created a rough sketch on the website
 
 01-22-2023
 --> In order to help students find answers to their queries, we are creating a list of commonly asked questions (FAQs).
+
+01-26-2023
+--> In order for students to mail us their queries, we are attempting to make the contact form more functional.
 </a></p>
 
 
