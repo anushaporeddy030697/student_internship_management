@@ -227,6 +227,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 01/25/23-- Discussed about adding more filter components to shortlist jobs based on those filters like company name, job title, passedout year etc
 
+02/01/23-- Worked on Search bar and added more functionality to filter the things like based on salary, company name, job role.
+
 </a></p>
 
 ** Manikanta Arumilli **
