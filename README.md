@@ -229,6 +229,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 02/01/23-- Worked on Search bar and added more functionality to filter the things like based on salary, company name, job role.
 
+02/02/23-- Made few changes in search bar filters like if we type company name 'info' instead of 'infosys' search functionality will return the information which contains company names with info like 'infotech', 'infosys' etc
+
 </a></p>
 
 ** Manikanta Arumilli **
