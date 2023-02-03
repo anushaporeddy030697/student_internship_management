@@ -307,6 +307,8 @@ Manikanta : created a rough sketch on the website
 --> In order for students to mail us their queries, we are attempting to make the contact form more functional.
 01-27-2023
 --> As a team we done the contact page and the data will be seen in the database.
+02-02-2023
+-->  currently we working on a chartbox but we can't find a solution to implement but we researched hubspot website for the chart box and we want to discuss has a team that how to implement this.  
 </a></p>
 
 
