@@ -374,6 +374,8 @@ we are working on the FAQ'S which provides the Question and answers for the stud
 We are working on the funconality of the contact us form  so students can send their questions via mail
 1-27-2023
 We have sucessfully made the contact form funconality the message can be seen in the database
+2-3-2023
+we have sucessfully completed the contact form so that the message can be sent to our mail adress
 </a></p>
 
 
