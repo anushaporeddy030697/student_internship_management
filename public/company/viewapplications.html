@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>view applications</title>
     <link rel="stylesheet" href="css/style.css" />
-
-    <script src="./js/authcheck.js"></script>
+  <!-- <script src="./js/authcheck.js"></script>-->
 </head>
 <body id="job-body" >
-    <input style="float: center;
-    color: black;
-    padding: 6px;
-  
-    border: 1px solid;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;" type="text" id="searchbox" placeholder="Search..">
-    <button style="padding: 7px;   border-radius: 8px;background-color: #fff  " class="searchbutton">Search</button>
-    <div class="container">
-        <div id="jobs">
-          
-        </div> 
+  <div class="container">
+        <div  style="overflow: hidden; margin-top: 50px;"
+       class="topnav">
+        <input style="float: center;
+        color: black;
+        padding: 6px;
+        border: 1px solid;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;" type="text" id="searchbox" placeholder="Search..">
+        <button style="padding: 7px;   border-radius: 8px;background-color: #fff  " class="searchbutton">Search</button>
       </div>
+    
+        <div id="jobs" style="display: grid;"> </div>
+        
+        </div>
     <script src="js/viewApplications.js"></script>
     <script src="https://kit.fontawesome.com/f52c3b31f3.js" crossorigin="anonymous"></script>
 </body>
