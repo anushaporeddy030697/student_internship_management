@@ -235,6 +235,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 02/02/23-- Made few changes in search bar filters like if we type company name 'info' instead of 'infosys' search functionality will return the information which contains company names with info like 'infotech', 'infosys' etc
 
+02/07/23-- As mentor told to make changes on search bar, So Worked on search bar to add a dropdown with few filter components in student page. Depending on the particular filter components in the dropdown companies can be sorted.
+
 </a></p>
 
 ** Manikanta Arumilli **
