@@ -384,6 +384,8 @@ We have sucessfully made the contact form funconality the message can be seen in
 we have sucessfully completed the contact form so that the message can be sent to our mail adress
 
 We are working on the chat box by using the third party application called drift 
+2-7-2023
+We have sucessfully completed the chat box funconality using Drift 
 </a></p>
 
 
