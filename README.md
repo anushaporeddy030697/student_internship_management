@@ -315,6 +315,10 @@ Manikanta : created a rough sketch on the website
 --> As a team we done the contact page and the data will be seen in the database.
 02-02-2023
 -->  currently we working on a chartbox but we can't find a solution to implement but we researched hubspot website for the chart box and we want to discuss has a team that how to implement this.  
+
+02-09-2023
+
+-->  Successfullt implemented the chatbox using Drift but we have to check the messages will be delivering successfully or not in the database.
 </a></p>
 
 
