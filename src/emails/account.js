@@ -52,7 +52,64 @@ const sendPasswordEmail=(email,link)=>{
 }
 
 
+const sendStudentBlockEmail=(email)=>{    
+    
+    const passwordMsg={
+        from:"studentinternship1234@gmail.com",
+        to:email,
+        subject:"Account blocked",
+        html:`<div><h2>Account Blocked</h2><h4><h4>Your Account is blocked in student internship portal due to fake information provided while creating account or while appling for a job in a company.</h4><p>Kindly contact admin</P>`
+    }
+
+    nodemailer.createTransport({
+        service:"gmail",
+        auth:{
+        user:"studentinternship1234@gmail.com",
+        pass:"cbotfjartbjbebta"
+        },
+        port:465,
+        host:"smtp.gmail.com"
+    }).sendMail(passwordMsg,(err)=>{
+        if(err){
+        return console.log("error occurs",err)
+        }else{
+        return console.log("emai sent")
+        }
+    })
+}
+
+
+const sendCompanyBlockEmail=(email)=>{    
+    
+    const passwordMsg={
+        from:"studentinternship1234@gmail.com",
+        to:email,
+        subject:"Account blocked",
+        html:`<div><h2>Account Blocked</h2><h4>Your Account is blocked due to fake information provided while creating account or while posting a job</h4><p>Kindly contact admin</P>`
+    }
+
+    nodemailer.createTransport({
+        service:"gmail",
+        auth:{
+        user:"studentinternship1234@gmail.com",
+        pass:"cbotfjartbjbebta"
+        },
+        port:465,
+        host:"smtp.gmail.com"
+    }).sendMail(passwordMsg,(err)=>{
+        if(err){
+        return console.log("error occurs",err)
+        }else{
+        return console.log("emai sent")
+        }
+    })
+}
+
+
+
 module.exports={
     sendPasswordEmail,
-    sendWelcomeEmail
+    sendWelcomeEmail,
+    sendCompanyBlockEmail,
+    sendStudentBlockEmail
 }
