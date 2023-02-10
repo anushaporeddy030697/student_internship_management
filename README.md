@@ -169,6 +169,10 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  2/03/2023
  
  --> Added the more fields to filter the jobs in student page like worktype and year of experience.
+ 
+ 2/10/2023
+ 
+ --> Added a special search bar based on the category to search a jobs.
 
 </a></p>
 
