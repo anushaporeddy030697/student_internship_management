@@ -392,6 +392,8 @@ we have sucessfully completed the contact form so that the message can be sent t
 We are working on the chat box by using the third party application called drift 
 2-7-2023
 We have sucessfully completed the chat box funconality using Drift 
+2-10-2023
+In the chat box the messages sent by the user can be seen in the admin login.
 </a></p>
 
 
