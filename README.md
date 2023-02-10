@@ -237,6 +237,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 02/07/23-- As mentor told to make changes on search bar, So Worked on search bar to add a dropdown with few filter components in student page. Depending on the particular filter components in the dropdown companies can be sorted.
 
+02/09/23-- Added filter components in dropdown of search bar to filter based on that particular item like company name or salary or experience or job description
+
 </a></p>
 
 ** Manikanta Arumilli **
