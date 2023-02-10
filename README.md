@@ -321,6 +321,8 @@ Manikanta : created a rough sketch on the website
 02-09-2023
 
 -->  Successfullt implemented the chatbox using Drift but we have to check the messages will be delivering successfully or not in the database.
+
+-->  The admin login allows you to view the user's chat messages in the chat box.
 </a></p>
 
 
