@@ -16,44 +16,58 @@
         margin: 0px;
         padding: 0px;
       }
-
+      @keyframes anu {
+      100%{background-position: 15% 50%;}
+      }
       body {
         font-family: 'Raleway', sans-serif;
-        background-color: #344a72;
+        background-image:url("https://www.nwmissouri.edu/archives/teachers/colden/CHPond1.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: anu 6s infinite alternate linear;
         line-height: 1.8;
-        color: #fff;
+        
       }
 
       a {
         text-decoration: none;
+        
       }
 
       #container {
         margin: 20px auto;
-        max-width: 400px;
+        max-width: 500px;
+        height: 575px;
         padding: 20px;
+        background: rgb(83, 80, 80);
+        border-radius: 20px;
       }
 
       .form-wrap {
-        background: #fff;
+        
         padding: 20px;
-        color: #333;
+        color: whitesmoke;
+        border: 1px;
+        
+        
       }
 
       .form-wrap .options {
         display: flex;
         justify-content: space-around;
+        
       }
 
       .form-wrap .options .option {
-        background: rgb(167, 170, 180);
+        background:rgb(167, 170, 180);
         color: #333;
         padding: 10px;
         margin: 10px 0 10px 0;
+        border-radius: 10px;
       }
 
       .form-wrap .options .current {
-        background: #37a08e;
+        background: #216ce7;
         color: #fff;
         padding: 10px;
         margin: 10px 0 10px 0;
@@ -75,6 +89,8 @@
       }
 
       .form-wrap .form-group input {
+        height:40px;
+        box-shadow: 0px 0px 20px whitesmoke;
         width: 100%;
         border: #344a72 1px solid;
         padding: 10px;
@@ -84,15 +100,20 @@
       .form-wrap button {
         display: block;
         width: 100%;
-        background: #49c1a2;
+        background: #216ce7;
+        box-shadow: 0px 0px 20px #216ce7;
         padding: 10px;
         margin-top: 20px;
         cursor: pointer;
         color: #fff;
+        border-radius: 5px;
+        border: 1px;
+        height: 40px;
       }
 
       .form-wrap button:hover {
         background: #37a08e;
+        box-shadow: 0px 0px 20px #37a08e;
       }
 
       .form-wrap .bottom-text {
@@ -102,11 +123,12 @@
 
       footer {
         text-align: center;
-        margin-top: 10px;
+        margin-top: 5px;
+        color: #fff;
       }
 
       footer a {
-        color: #49c1a2;
+        color: #216ce7;
       }
     </style>
   </head>
@@ -117,29 +139,30 @@
         <div class="options">
           <a class="option student " href="../student/login.html">Student</a>
           <a class="option company current" href="#">Company</a>
-          <a class="option admin" href="../admin/adminLogin.html">Admin</a>
-        </div>
+          <a class="option admin" href="../admin/adminLogin.html"
+          >Admin</a>
+        </div><br>
         <form id="company-login">
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required/><br><br>
           </div>
           <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+           
+            <input type="password" name="password" id="password" placeholder="password" required/>
           </div>
           <button type="submit" class="btn">Login</button>
           <p class="bottom-text">
             By clicking the Sign Up button, you agree to our
-            <a href="#">Terms & Conditions</a> and
-            <a href="#">Privacy Policy</a>
+            <a href="#"><font color="#216ce7" size="3">Terms & Conditions</font></a> and
+            <a href="#"><font color="#216ce7" size="3">Privacy Policy</font></a>
           </p>
         </form>
       </div>
       <footer>
         <p>Don't have an account? <a href="./companyregister.html">Register Here</a></p>
         <p>Forgot password? <a href="companypasswordreset.html">Reset Here</a></p>
-        <p>Go To Home Page <a href="/">click Here</a></p>
+        <p>Go To Home Page <a href="../index.html">click Here</a></p>
       </footer>
     </div>
     <script src="companyLogin.js"></script>
