@@ -10,7 +10,7 @@ let usersContainer = document.getElementById("jobs");
 //     location.href='/student/applypage.html'
 // })
 $searchbutton.addEventListener('click',async (e)=>{
-  const searchterm = search.value
+  const searchterm = search.value.toLowerCase();
   //console.log(searchterm);
   var result = await fetch('/jobs', {
     method: 'POST',
@@ -24,7 +24,11 @@ $searchbutton.addEventListener('click',async (e)=>{
   }).then((res) => res.json())
   //console.log(result);
   const filterTitleFunction = (job)=>{
-    return( job.title.includes(searchterm) ||job.yoe.toString().includes(searchterm)  ||job.companyname.includes(searchterm) ||job.worktype.includes(searchterm))
+   // console.log(document.getElementById("filtertype").value)
+    const filtertype = document.getElementById("filtertype").value
+   // console.log(filtertype)
+    return filtertype == 1 ? job.companyname.toLowerCase().includes(searchterm) : filtertype == 2 ? job.title.toLowerCase().includes(searchterm) : filtertype == 3 ? job.yoe.toString().includes(searchterm) : job.worktype.toLowerCase().includes(searchterm)
+   // ( job.title.includes(searchterm) ||job.yoe.toString().includes(searchterm)  ||job.companyname.includes(searchterm) ||job.worktype.includes(searchterm))
   }
   const filteredResult = result.filter(filterTitleFunction)
   //console.log(filteredResult);
