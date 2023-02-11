@@ -20,7 +20,13 @@
         margin-top: 8px;
         margin-right: 16px;
         font-size: 17px;" type="text" id="searchbox" placeholder="Search..">
-        <button style="padding: 7px;   border-radius: 8px;background-color: #fff  " class="searchbutton">Search</button>
+        <select name="filtertype" style="padding: 7px;   border-radius: 8px;background-color: #fff" id="filtertype">
+          <option value="1">Company Name</option>
+          <option value="2">Job Title</option>
+          <option value="3">Experience Level</option>
+          <option value="4">Work Type</option>
+          </select>
+        <button style="padding: 7px;   border-radius: 8px;background-color: #fff" class="searchbutton">Search</button>
       </div>
 
       <div id="jobs">
