@@ -243,6 +243,9 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 02/09/23-- Added filter components in dropdown of search bar to filter based on that particular item like company name or salary or experience or job description
 
+02/14/23-- We have made a discussion on sorting jobs based on departments, we need to work on it.
+
+
 </a></p>
 
 ** Manikanta Arumilli **
