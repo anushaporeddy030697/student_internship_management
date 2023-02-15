@@ -330,6 +330,10 @@ Manikanta : created a rough sketch on the website
 -->  Successfullt implemented the chatbox using Drift but we have to check the messages will be delivering successfully or not in the database.
 
 -->  The admin login allows you to view the user's chat messages in the chat box.
+
+02-15-2023
+
+-->  Admin can clearly visible all the messages send by the student if we are admin we can see the messages using drift.
 </a></p>
 
 
