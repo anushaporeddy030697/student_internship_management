@@ -407,6 +407,9 @@ We are working on the chat box by using the third party application called drift
 We have sucessfully completed the chat box funconality using Drift 
 2-10-2023
 In the chat box the messages sent by the user can be seen in the admin login.
+
+2-15-2023
+We are working on the project to deploy into remote 
 </a></p>
 
 
