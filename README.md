@@ -245,6 +245,7 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 02/14/23-- We have made a discussion on sorting jobs based on departments, we need to work on it.
 
+02/15/23-- Discussed with client regarding update, he mentioned to add sort filter and few dropdown filters near the search functionality in student page
 
 </a></p>
 
