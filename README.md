@@ -335,6 +335,9 @@ Manikanta : created a rough sketch on the website
 02-15-2023
 
 -->  Admin can clearly visible all the messages send by the student if we are admin we can see the messages using drift.
+
+-->  Discussed with the client that we have to deploy our project in the cloud so we are trying to use cyclic hosting website , so we have to do some research on this website.
+
 </a></p>
 
 
