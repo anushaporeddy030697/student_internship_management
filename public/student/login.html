@@ -15,18 +15,22 @@
         box-sizing: border-box;
         margin: 0px;
         padding: 0px;
+        
       }
       @keyframes anu {
-      100%{background-position: 15% 50%;}
+      100%{background-position: 15% 50%;
+        
+      
+      }
       }
       body {
         font-family: 'Raleway', sans-serif;
-        background-image:url("https://www.nwmissouri.edu/archives/teachers/colden/CHPond1.JPG");
+        background-image:url("https://www.marketingmag.com.au/wp-content/uploads/2022/04/Happt-team-group-people-jumping-celebrate-675w.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         animation: anu 6s infinite alternate linear;
         line-height: 1.8;
-        
+        overflow: hidden;  
       }
 
       a {
@@ -34,15 +38,20 @@
         
       }
 
+
+
       #container {
-        margin: 20px auto;
+        
+        margin: 100px auto;
         max-width: 500px;
         height: 575px;
         padding: 20px;
         background: rgb(83, 80, 80);
         border-radius: 20px;
-      }
 
+        
+      }
+      
       .form-wrap {
         
         padding: 20px;
@@ -59,11 +68,13 @@
       }
 
       .form-wrap .options .option {
-        background:rgb(167, 170, 180);
-        color: #333;
+        background: #fff;
+        color: #216ce7;
         padding: 10px;
         margin: 10px 0 10px 0;
         border-radius: 10px;
+        box-shadow: 0px 0px 20px #fff;
+       
       }
 
       .form-wrap .options .current {
@@ -71,8 +82,9 @@
         color: #fff;
         padding: 10px;
         margin: 10px 0 10px 0;
+        box-shadow: 0px 0px 20px #216ce7;
+        
       }
-
       .form-wrap h1,
       .form-wrap p {
         text-align: center;
@@ -112,8 +124,11 @@
       }
 
       .form-wrap button:hover {
-        background: #37a08e;
-        box-shadow: 0px 0px 20px #37a08e;
+        background: #216ce7;
+        box-shadow: 10px 10px 0px whitesmoke;
+        top: -5px;
+        left:-5px;
+    
       }
 
       .form-wrap .bottom-text {
@@ -130,18 +145,19 @@
       footer a {
         color: #216ce7;
       }
+    
     </style>
   </head>
   <body>
     <div id="container">
       <div class="form-wrap">
-        <h1>Sign In</h1>
+        <h1 id="shashank">Sign In</h1>
         <div class="options">
-          <a class="option student current" href="#">Student</a>
+          <a class="option student current" href="#"><b>Student</b></a>
           <a class="option company" href="../company/companyLogin.html"
-            >Company</a>
+            ><b>Company</b></a>
           <a class="option admin" href="../admin/adminLogin.html"
-            >Admin</a>
+            ><b>Admin</b></a>
           
         </div><br>
         <form id="student-login">
