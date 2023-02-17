@@ -103,6 +103,12 @@ supported in selection of web page login design.
      
 --> Done with admin role. I have eliminated the registration for admin. Admin can directly get login credentials.
 --> Updated the Wiki with last 2 weeks work status
+     
+2/17/23
+     
+--> updated the wiki.
+--> Need to search for better templetes to the application.
+-->
 </a>
 <p>
 
