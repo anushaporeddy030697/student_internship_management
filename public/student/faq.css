@@ -97,6 +97,24 @@ body {
 .show-text .down-icon {
   display: none;
 }
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #efefef;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  background: #fff;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px
+          rgba(0, 0, 0, 0.5));
+}
+
 
 @media screen and (min-width: 992px) {
   .accordion {
