@@ -179,6 +179,10 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  2/10/2023
  
  --> Added a special search bar based on the category to search a jobs.
+ 
+ 2/17/2023
+ 
+ --> working on enhancement in search bar functionality with more features.
 
 </a></p>
 
