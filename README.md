@@ -257,6 +257,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 02/15/23-- Discussed with client regarding update, he mentioned to add sort filter and few dropdown filters near the search functionality in student page
 
+02/21/23-- We have made changes in search functionality and added 5 filters to sort the details based on those filters
+
 </a></p>
 
 ** Manikanta Arumilli **
