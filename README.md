@@ -350,6 +350,10 @@ Manikanta : created a rough sketch on the website
 
 -->  Discussed with the client that we have to deploy our project in the cloud so we are trying to use cyclic hosting website , so we have to do some research on this website.
 
+2-22-23
+
+-->   We successfully deployed our application in cyclic Hosting (AWS) but it was working slowly also we need some time to solve this issue.
+
 </a></p>
 
 
