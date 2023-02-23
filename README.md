@@ -436,6 +436,8 @@ In the chat box the messages sent by the user can be seen in the admin login.
 We are working on the project to deploy into remote 
 2-16-2023
 In our research we came across many platforms in these cyclic hosting website provides free deployment is easy when compared to other websites
+2-23-2023
+we have sucessfully deployed the project into remote using cyclic hosting application
 
 </a></p>
 
