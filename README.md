@@ -354,6 +354,8 @@ Manikanta : created a rough sketch on the website
 
 -->   We successfully deployed our application in cyclic Hosting (AWS) but it was working slowly also we need some time to solve this issue.
 
+-->   As per client requirements , we need to work on feedback page for our application.
+
 </a></p>
 
 
