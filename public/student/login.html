@@ -11,80 +11,241 @@
     />
 
     <style>
+
+
+
+:root {
+/* COLORS */
+--white: #e9e9e9;
+--gray: #333;
+--blue: #0367a6;
+--lightblue: #008997;
+/* RADII */
+--button-radius: 0.7rem;
+/* SIZES */
+--max-width: 758px;
+--max-height: 420px;
+font-size: 16px;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+align-items: center;
+background-color: var(--white);
+background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: grid;
+height: 100vh;
+place-items: center;
+}
+.form__title {
+font-weight: 300;
+margin: 0;
+margin-bottom: 1.25rem;
+}
+.link {
+color: var(--gray);
+font-size: 0.9rem;
+margin: 1.5rem 0;
+text-decoration: none;
+}
+.container {
+background-color: var(--white);
+border-radius: var(--button-radius);
+box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+height: var(--max-height);
+max-width: var(--max-width);
+overflow: hidden;
+position: relative;
+width: 100%;
+}
+.container__form {
+height: 100%;
+position: absolute;
+top: 0;
+transition: all 0.6s ease-in-out;
+}
+.container--signin {
+left: 0;
+width: 50%;
+z-index: 2;
+}
+.container.right-panel-active .container--signin {
+transform: translateX(100%);
+}
+.container--signup {
+left: 0;
+opacity: 0;
+width: 50%;
+z-index: 1;
+}
+.container.right-panel-active .container--signup {
+animation: show 0.6s;
+opacity: 1;
+transform: translateX(100%);
+z-index: 5;
+}
+.container__overlay {
+height: 100%;
+left: 50%;
+overflow: hidden;
+position: absolute;
+top: 0;
+transition: transform 0.6s ease-in-out;
+width: 50%;
+z-index: 100;
+}
+.container.right-panel-active .container__overlay {
+transform: translateX(-100%);
+}
+.overlay {
+background-color: var(--lightblue);
+background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+left: -100%;
+position: relative;
+transform: translateX(0);
+transition: transform 0.6s ease-in-out;
+width: 200%;
+}
+.container.right-panel-active .overlay {
+transform: translateX(50%);
+}
+.overlay__panel {
+align-items: center;
+display: flex;
+flex-direction: column;
+height: 100%;
+justify-content: center;
+position: absolute;
+text-align: center;
+top: 0;
+transform: translateX(0);
+transition: transform 0.6s ease-in-out;
+width: 50%;
+}
+.overlay--left {
+transform: translateX(-20%);
+}
+.container.right-panel-active .overlay--left {
+transform: translateX(0);
+}
+.overlay--right {
+right: 0;
+transform: translateX(0);
+}
+.container.right-panel-active .overlay--right {
+transform: translateX(20%);
+}
+.btn {
+background-color: var(--blue);
+background-image: linear-gradient(90deg, var(--blue) 0%, var(--lightblue) 74%);
+border-radius: 20px;
+border: 1px solid var(--blue);
+color: var(--white);
+cursor: pointer;
+font-size: 0.8rem;
+font-weight: bold;
+letter-spacing: 0.1rem;
+padding: 0.9rem 4rem;
+text-transform: uppercase;
+transition: transform 80ms ease-in;
+}
+.form > .btn {
+margin-top: 1.5rem;
+}
+.btn:active {
+transform: scale(0.95);
+}
+.btn:focus {
+outline: none;
+}
+.form {
+background-color: var(--white);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 3rem;
+height: 100%;
+text-align: center;
+}
+.input {
+background-color: #fff;
+border: none;
+padding: 0.9rem 0.9rem;
+margin: 0.5rem 0;
+width: 100%;
+}
+@keyframes show {
+0%,
+49.99% {
+opacity: 0;
+z-index: 1;
+}
+50%,
+100% {
+opacity: 1;
+z-index: 5;
+}
+}
+      /*
       * {
         box-sizing: border-box;
         margin: 0px;
         padding: 0px;
-        
       }
-      @keyframes anu {
-      100%{background-position: 15% 50%;
-        
-      
-      }
-      }
+
       body {
         font-family: 'Raleway', sans-serif;
-        background-image:url("https://www.marketingmag.com.au/wp-content/uploads/2022/04/Happt-team-group-people-jumping-celebrate-675w.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        animation: anu 6s infinite alternate linear;
+        background-color: #344a72;
         line-height: 1.8;
-        overflow: hidden;  
+        color: #fff;
       }
 
       a {
         text-decoration: none;
-        
       }
-
-
 
       #container {
-        
-        margin: 100px auto;
-        max-width: 500px;
-        height: 575px;
+        margin: 20px auto;
+        max-width: 400px;
         padding: 20px;
-        background: rgb(83, 80, 80);
-        border-radius: 20px;
-
-        
       }
-      
+
       .form-wrap {
-        
+        background: #fff;
         padding: 20px;
-        color: whitesmoke;
-        border: 1px;
-        
-        
+        color: #333;
       }
 
       .form-wrap .options {
         display: flex;
         justify-content: space-around;
-        
       }
 
       .form-wrap .options .option {
-        background: #fff;
-        color: #216ce7;
+        background: rgb(167, 170, 180);
+        color: #333;
         padding: 10px;
         margin: 10px 0 10px 0;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px #fff;
-       
       }
 
       .form-wrap .options .current {
-        background: #216ce7;
+        background: #37a08e;
         color: #fff;
         padding: 10px;
         margin: 10px 0 10px 0;
-        box-shadow: 0px 0px 20px #216ce7;
-        
       }
+
       .form-wrap h1,
       .form-wrap p {
         text-align: center;
@@ -101,8 +262,6 @@
       }
 
       .form-wrap .form-group input {
-        height:40px;
-        box-shadow: 0px 0px 20px whitesmoke;
         width: 100%;
         border: #344a72 1px solid;
         padding: 10px;
@@ -112,23 +271,15 @@
       .form-wrap button {
         display: block;
         width: 100%;
-        background: #216ce7;
-        box-shadow: 0px 0px 20px #216ce7;
+        background: #49c1a2;
         padding: 10px;
         margin-top: 20px;
         cursor: pointer;
         color: #fff;
-        border-radius: 5px;
-        border: 1px;
-        height: 40px;
       }
 
       .form-wrap button:hover {
-        background: #216ce7;
-        box-shadow: 10px 10px 0px whitesmoke;
-        top: -5px;
-        left:-5px;
-    
+        background: #37a08e;
       }
 
       .form-wrap .bottom-text {
@@ -138,42 +289,81 @@
 
       footer {
         text-align: center;
-        margin-top: 5px;
-        color: #fff;
+        margin-top: 10px;
       }
 
       footer a {
-        color: #216ce7;
+        color: #49c1a2;
       }
-    
+*/
+
     </style>
   </head>
   <body>
+
+    <div class="container right-panel-active">
+      <!-- Sign Up -->
+      <div class="container__form container--signup">
+      <form action="#" class="form" id="company-login">
+      <h2 class="form__title">Company Login In</h2>
+      <input type="email" placeholder="Email" class="input" id="c-mail" />
+      <input type="password" placeholder="Password" class="input" id="c-pass" />
+      <a href="../company/companypasswordreset.html" class="link">Forgot your password?</a>
+      <p>Don't have an account? <a href="../company/companyregister.html">Register Here</a></p>
+      <button class="btn" type="submit" id="c">Sign In</button>
+      </form>
+      </div>
+      <!-- Sign In -->
+      <div class="container__form container--signin">
+      <form action="#" class="form" id="student-login">
+      <h2 class="form__title">Student Log In</h2>
+      <input type="email" placeholder="Email" class="input" id="s-mail" />
+      <input type="password" placeholder="Password" class="input" id="s-pass"/>
+      <a href="studentpasswordreset.html" class="link">Forgot your password?</a>
+      <p>Don't have an account? <a href="register.html">Register Here</a></p>
+      <button class="btn" type="submit" id="s">Sign In</button>
+      </form>
+      </div>
+      <!-- Overlay -->
+      <div class="container__overlay">
+      <div class="overlay">
+      <div class="overlay__panel overlay--left">
+      <button class="btn" id="signIn">Student Login </button>
+      </div>
+      <div class="overlay__panel overlay--right">
+      <button class="btn" id="signUp">Company Login </button>
+      </div>
+      </div>
+      </div>
+      </div>
+
+
+    <!--
     <div id="container">
       <div class="form-wrap">
-        <h1 id="shashank">Sign In</h1>
+        <h1>Sign In</h1>
         <div class="options">
-          <a class="option student current" href="#"><b>Student</b></a>
+          <a class="option student current" href="#">Student</a>
           <a class="option company" href="../company/companyLogin.html"
-            ><b>Company</b></a>
+            >Company</a>
           <a class="option admin" href="../admin/adminLogin.html"
-            ><b>Admin</b></a>
+            >Admin</a>
           
-        </div><br>
+        </div>
         <form id="student-login">
           <div class="form-group">
-            
-            <input type="email" name="email" id="email" placeholder="Enter your Email" required /><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
           </div>
           <div class="form-group">
-            
-            <input type="password" name="password" id="password" placeholder="password" required/>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
           </div>
           <button type="submit" class="btn">Login</button>
           <p class="bottom-text">
             By clicking the Sign Up button, you agree to our
-            <a href="#"><font color="#216ce7" size="3">Terms & Conditions</font></a> and
-            <a href="#"><font color="#216ce7" size="3">Privacy Policy</font></a>
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
           </p>
         </form>
       </div>
@@ -182,7 +372,7 @@
         <p>Forgot password? <a href="studentpasswordreset.html">Reset Here</a></p>
         <p>Go To Home Page <a href="/">click Here</a></p>
       </footer>
-    </div>
+    </div> -->
     <script src="studentlogin.js"></script>
   </body>
 </html>
