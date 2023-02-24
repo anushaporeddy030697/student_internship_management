@@ -78,6 +78,10 @@ body {
   font-weight: 500;
   color: #000;
 }
+.question {
+  display: flex;
+  justify-content: space-between;
+}
 
 .question-btn {
   font-size: 1.5rem;
