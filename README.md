@@ -440,6 +440,8 @@ We are working on the project to deploy into remote
 In our research we came across many platforms in these cyclic hosting website provides free deployment is easy when compared to other websites
 2-23-2023
 we have sucessfully deployed the project into remote using cyclic hosting application
+2-24-2023
+we are working on the database to deploy into remote
 
 </a></p>
 
