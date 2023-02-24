@@ -6,7 +6,8 @@ const msg={
   text:""
 }
 
-nodemailer.createTransport({
+nodemailer.createTransport(
+  {
   service:"gmail",
   auth:{
     user:"studentinternship1234@gmail.com",
