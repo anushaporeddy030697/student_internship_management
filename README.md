@@ -130,7 +130,6 @@ I was working on the flow chart of the project.
 
 I made rough figure on the paper for login pages design flow chart and dashboard.
 
-
 9/9/2022
 -- coordinating with team for sharing and taking inputs to create home page.
 
@@ -185,6 +184,10 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  2/17/2023
  
  --> working on enhancement in search bar functionality with more features.
+ 
+ 2/24/2023
+ 
+ --> I have added the global search functionality in the student page.
 
 </a></p>
 
