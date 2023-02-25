@@ -10,6 +10,11 @@ let usersContainer = document.getElementById("jobs");
 //     location.href='/student/applypage.html'
 // })
 $searchbutton.addEventListener('click',async (e)=>{
+  const companyName = document.getElementById('companyName').value
+  const jobTitle = document.getElementById('jobTitle').value
+  const Exp = document.getElementById('experience').value
+  const jobType = document.getElementById('jobType').value
+  const salary = document.getElementById('salary').value
   const searchterm = search.value.toLowerCase();
   //console.log(searchterm);
   var result = await fetch('/jobs', {
