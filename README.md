@@ -188,6 +188,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  2/24/2023
  
  --> I have added the global search functionality in the student page.
+ --> Added the 5 search filters to filter based on the combination.
 
 </a></p>
 
