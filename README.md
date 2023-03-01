@@ -452,6 +452,10 @@ we have sucessfully deployed the project into remote using cyclic hosting applic
 2-24-2023
 we are working on the database to deploy into remote
 
+3-1-2023
+
+we are resolving some issues on database while deploying into remote
+
 </a></p>
 
 
