@@ -267,6 +267,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 02/23/23-- We have given an update to client, he told to make changes regarding filters with or combinations like if we select job title and salary we need to get data with combination of both filters.
 
+03/01/23-- As discussed with client, We are working on the search functionality with different combinations
+
 </a></p>
 
 ** Manikanta Arumilli **
