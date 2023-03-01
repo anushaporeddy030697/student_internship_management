@@ -364,6 +364,10 @@ Manikanta : created a rough sketch on the website
 
 -->   As per client requirements , we need to work on feedback page for our application.
 
+3-1-2023
+
+--> we are working on to integrate the feedback page to our application.
+
 </a></p>
 
 
