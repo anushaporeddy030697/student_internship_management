@@ -170,6 +170,18 @@ p{
     
 }
 
+
+.boxes .totaljobs{
+    height: 20rem;
+    width: 20rem;
+    background: rgb(142, 236, 135);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
  .job{
     /* grid-area: job; */
     background: #333;
