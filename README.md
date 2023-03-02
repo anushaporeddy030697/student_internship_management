@@ -371,6 +371,8 @@ Manikanta : created a rough sketch on the website
 --> we are working on to integrate the feedback page to our application.
 --> we are working on to integrate the feedback page to our application and working on database deployment
 
+--> successfully done the front end part for the feedback page.
+
 </a></p>
 
 
