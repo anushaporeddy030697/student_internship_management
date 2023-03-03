@@ -193,6 +193,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  3/3/2023
  
  --> I have added the global search bar functionality to filter the jobs in the student page.
+ --> I have added the combinations of search functionality to filter the data of company in the student page.    
 
 </a></p>
 
