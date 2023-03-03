@@ -268,3 +268,13 @@ p{
       border: 1px solid #ccc;
     }
   }
+
+.searchbox{
+    float: center;
+    color: black;
+    padding: 6px;
+    border: 1px solid;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
