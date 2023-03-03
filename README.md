@@ -111,6 +111,13 @@ supported in selection of web page login design.
 
 2/24/23
 --> Need to take help from the team and deploy database in server.
+     
+3/3/23
+--> I have added the global search bar functionality to filter the jobs in the student page.
+--> I have added the combinations of search functionality to filter the data of company in the student page.
+--> I have updated the wiki in github.
+
+
 </a>
 <p>
 
@@ -190,11 +197,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  --> I have added the global search functionality in the student page.
  --> Added the 5 search filters to filter based on the combination.
  
- 3/3/2023
  
- --> I have added the global search bar functionality to filter the jobs in the student page.
- --> I have added the combinations of search functionality to filter the data of company in the student page.    
-
 </a></p>
 
 
