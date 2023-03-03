@@ -111,6 +111,10 @@ supported in selection of web page login design.
 
 2/24/23
 --> Need to take help from the team and deploy database in server.
+
+3/3/23
+--> Deployment of database in server is done.
+--> prepared power point presentation with most recent upgrades in application like search bar functionality,deployment of code in server,chat box functionality
 </a>
 <p>
 
