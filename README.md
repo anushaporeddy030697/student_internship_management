@@ -269,6 +269,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 03/01/23-- As discussed with client, We are working on the search functionality with different combinations
 
+03/03/23-- We have partially completed the search functionality, working on gathering things on internet required for the completion of search functionality
+
 </a></p>
 
 ** Manikanta Arumilli **
