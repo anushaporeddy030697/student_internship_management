@@ -1,18 +1,36 @@
-
 const $studentRegForm=document.getElementById("student-register")
+const $studentVerify=document.getElementById("verify")
+const $enterOtp = document.getElementById("enterOtp")
+const $checkOtp = document.getElementById("checkOtp")
+var $otpstatus = false
 
-function verifyPassword(password1,password2) {  
-    if(password1!==password2){
-        document.getElementById("message").innerHTML = "password and confirm password should be same";
-        return false
+$studentVerify.addEventListener('click',async (e) => {
+    e.preventDefault()
+    console.log("Mail verification initiated")
+    const $mailVerify = document.getElementById("email").value;
+    
+    console.log($mailVerify)
+    $studentVerify.style.display = "none"
+    $enterOtp.style.display = "block"
+    $checkOtp.style.display = "block"
+    if($mailVerify){
+        const result1 = await fetch('/otp', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email:$mailVerify
+            })
+        }).then((res) => res.json())
+        console.log(result1.msg)
+        if(!result1.error){
+            alert("OTP sent to mail")
+        }else{
+            alert("OTP Failed! due to error :",result1.error)
+        }
     }
-    if(password1.length < 8){
-        document.getElementById("message").innerHTML = "password length should be longer than or equal to 8 characters";
-        return false
-    }
-    return true
-   
-  }  
+})
 
 
 $studentRegForm.addEventListener('submit',async (e)=>{
