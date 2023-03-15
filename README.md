@@ -279,6 +279,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 03/03/23-- We have partially completed the search functionality, working on gathering things on internet required for the completion of search functionality
 
+03/15/23-- Done with search functionality in view jobs page, Discussed about adding a new field for the student registration "Reference"
+
 </a></p>
 
 ** Manikanta Arumilli **
