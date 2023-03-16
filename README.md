@@ -281,6 +281,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 03/15/23-- Done with search functionality in view jobs page, Discussed about adding a new field for the student registration "Reference"
 
+03/16/23-- Going to work on adding a field during registration of a student and also we have an update about adding this reference field in search functionality
+
 </a></p>
 
 ** Manikanta Arumilli **
