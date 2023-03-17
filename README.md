@@ -201,6 +201,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  
  --> Done with the feedback page in the home page
  --> Done with the search functionality in the company page to filter the student applications.
+ --> Deployed in the cloud both feedback page and search functionality.
  
  
 </a></p>
