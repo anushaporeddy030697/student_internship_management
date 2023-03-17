@@ -197,6 +197,10 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  --> I have added the global search functionality in the student page.
  --> Added the 5 search filters to filter based on the combination.
  
+ 3/17/2023
+ 
+ --> Done with the feedback page in the home page
+ 
  
 </a></p>
 
@@ -481,8 +485,6 @@ we are resolving some issues on database while deploying into remote
 we have sucessfully deployed the data base into remote 
 3-14-2023
 we are working on the UI part of the project 
-3-17-2023
-We are working on the Admin login to store in the database
 
 </a></p>
 
