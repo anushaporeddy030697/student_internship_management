@@ -200,6 +200,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  3/17/2023
  
  --> Done with the feedback page in the home page
+ --> Done with the search functionality in the company page to filter the student applications.
  
  
 </a></p>
