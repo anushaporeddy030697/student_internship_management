@@ -32,6 +32,54 @@ $studentVerify.addEventListener('click',async (e) => {
     }
 })
 
+$checkOtp.addEventListener('click',async (e) =>{
+    e.preventDefault()
+    console.log("OTP verification initiated")
+    const $maillVerify = document.getElementById("email").value;
+    const $otp = $enterOtp.value
+    console.log($otp)
+    if($otp.length == 6){
+        const result2 = await fetch('/otpp',{
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            email:$maillVerify,
+            otp:$otp
+          })
+        }).then((res) => res.json())
+        console.log(result2.msg)
+        if(result2.msg){
+           // console.log(result2.msg,"frontend")
+            $otpstatus = true
+            alert("OTP Verified")
+        }
+        else if(result2.err){
+            alert("Wrong OTP")
+        }
+        else{
+            alert("OTP Failed! due to error :",result2.error)
+            location.href="/student/register.html"
+        }
+    }else{
+        alert("Wrong OTP")
+    }
+})
+
+
+function verifyPassword(password1,password2) {  
+    if(password1!==password2){
+        document.getElementById("message").innerHTML = "password and confirm password should be same";
+        return false
+    }
+    if(password1.length < 8){
+        document.getElementById("message").innerHTML = "password length should be longer than or equal to 8 characters";
+        return false
+    }
+    return true
+   
+  }
 
 $studentRegForm.addEventListener('submit',async (e)=>{
     e.preventDefault()
