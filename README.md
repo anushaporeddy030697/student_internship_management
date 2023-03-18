@@ -117,6 +117,10 @@ supported in selection of web page login design.
 --> I have added the combinations of search functionality to filter the data of company in the student page.
 --> I have updated the wiki in github.
 
+3/17/23
+--> I have updated the feedback page.
+--> Need to work on UI design for the application
+
 
 </a>
 <p>
