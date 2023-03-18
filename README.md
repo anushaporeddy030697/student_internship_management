@@ -120,6 +120,8 @@ supported in selection of web page login design.
 3/17/23
 --> I have updated the feedback page.
 --> Need to work on UI design for the application
+--> Need to work on UI part for home page.
+--> selecting the templet for home page still in progress
 
 
 </a>
