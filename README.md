@@ -495,7 +495,8 @@ we are resolving some issues on database while deploying into remote
 we have sucessfully deployed the data base into remote 
 3-14-2023
 we are working on the UI part of the project 
-
+3-21-2023
+We have sucessfully completed the UI for the student page for the website
 </a></p>
 
 
