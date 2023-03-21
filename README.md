@@ -404,6 +404,8 @@ Manikanta : created a rough sketch on the website
 --> we have to work on the database in admin role, there is no data showing in the  database for the admin role.  
 3-17-2023
 --> According to the client, that we need to override the admin functionality and need to get response for the new admin from postman. 
+3-21-2023
+--> done with the admin overriding when first admin is login then second admin cannot able to login , second admin gets a notification when first admin was login.
 
 </a></p>
 
