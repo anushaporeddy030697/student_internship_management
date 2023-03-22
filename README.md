@@ -406,6 +406,8 @@ Manikanta : created a rough sketch on the website
 --> According to the client, that we need to override the admin functionality and need to get response for the new admin from postman. 
 3-21-2023
 --> done with the admin overriding when first admin is login then second admin cannot able to login , second admin gets a notification when first admin was login.
+3-22-2023
+--> As per client requirements we are working on the admin page that we need to hide the age and need to add the year of birth
 
 </a></p>
 
