@@ -295,6 +295,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 03/16/23-- Going to work on adding a field during registration of a student and also we have an update about adding this reference field in search functionality
 
+03/20/23-- Added a Reference field while applying for the job, need to work on the reference field to add in a search functionality
+
 </a></p>
 
 ** Manikanta Arumilli **
