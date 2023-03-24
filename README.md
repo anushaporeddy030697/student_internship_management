@@ -212,6 +212,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  3/24/2023
  
  --> Done with the feedback page UI and functional part successfully.
+ --> Done with the search bar functionality in company page based on the student age and experience level.
  
  
 </a></p>
