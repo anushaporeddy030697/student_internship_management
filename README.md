@@ -209,6 +209,10 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  --> Done with the search functionality in the company page to filter the student applications.
  --> Deployed in the cloud both feedback page and search functionality.
  
+ 3/24/2023
+ 
+ --> Done with the feedback page UI and functional part successfully.
+ 
  
 </a></p>
 
