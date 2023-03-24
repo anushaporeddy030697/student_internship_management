@@ -133,3 +133,29 @@ window.onload=async()=>{
           // location.href="../student/studentindex.html"
       }
 }
+
+async function getMail(companyname,title,yoe,requirements,worktype,emptype,empbenefits){
+// console.log(companyname,title,yoe,requirements,worktype,emptype,empbenefits)
+  const mailid = prompt("Enter your friend Mail ID : ");
+  console.log(mailid)
+ if(mailid){
+ const result2 = await fetch('/refer', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+    name : studentName,
+    mail : mailid,
+    company : companyname,
+    title : title,
+    exp : yoe,
+    responsibilities : requirements,
+    worktype : worktype,
+    emptype : emptype,
+    empbenefits : empbenefits
+})
+  }).then((res) => res.json())
+  console.log(result2)
+}
+}
