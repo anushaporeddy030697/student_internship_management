@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <title>Document</title>
 	
 </head>
@@ -297,6 +298,116 @@ border-radius: 8px;
 	width: auto;
 	padding-bottom: 50px;
 }
+
+.btn{
+    margin: 18px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: 1000;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+.btn:active {
+    transform: scale(0.95);
+  }
+.testimonials{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+  
+}
+.testimonial{
+  background: #fff;
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border: 1px  #050505;
+  border-radius: 8px;
+  transition: 1s;
+}
+.testimonial:hover{
+	transform: scale(1.1);
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.testimonial img:hover{
+	width : 150px;
+	height : 150px;
+	border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: #6ab04c;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
 </style>
 <body>
 	<div class="contain">
@@ -328,6 +439,69 @@ border-radius: 8px;
 	  <p id="my-form-status"></p>
 	</form>
 </div>
+
+<div class="testimonials">
+	<div class="inner">
+	  <h1>Testimonials</h1>
+	  <div class="border"></div>
+
+	  <div class="row">
+		<div class="col">
+		  <div class="testimonial">
+			<img src="p1.png" alt="">
+			<div class="name">John Wesley</div>
+			<div class="stars">
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			</div>
+
+			<p>
+			  This site is cool , I have been using it since past 6 months.<br> Last month I got selected for a product based comapany.<br> <br> Thank you SIMS!
+			</p>
+		  </div>
+		</div>
+
+		<div class="col">
+		  <div class="testimonial">
+			<img src="p2.png" alt="">
+			<div class="name">Dalia Mendoza</div>
+			<div class="stars">
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="far fa-star"></i>
+			  <i class="far fa-star"></i>
+			</div>
+
+			<p>
+			  One of the best intership's provider portal. I have sucessfully completed my <b> 3 </b> months intership using SIMS. <br> This portal is really helpul.
+			</p>
+		  </div>
+		</div>
+
+		<div class="col">
+		  <div class="testimonial">
+			<img src="p3.png" alt="">
+			<div class="name"> Monicca Cassendra </div>
+			<div class="stars">
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="far fa-star"></i>
+			</div>
+
+			<p>
+			  SIMS portal is really helpful for those people who are in requirement of jobs or interships. <br> The best & and east way to get a good job. Thank You :)
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
     <script>window.addEventListener("DOMContentLoaded",() => {
         const fr = new FaceRating("#face-rating");
 		console.log(document.getElementById("face-rating").value)
