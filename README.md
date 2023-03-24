@@ -511,6 +511,10 @@ we have sucessfully deployed the data base into remote
 we are working on the UI part of the project 
 3-21-2023
 We have sucessfully completed the UI for the student page for the website
+
+3-24-2023
+
+We are working on the hyper links and UI of the project
 </a></p>
 
 
