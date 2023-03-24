@@ -297,6 +297,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 03/20/23-- Added a Reference field while applying for the job, need to work on the reference field to add in a search functionality
 
+03/22/23-- Still Working on the search functionality of the reference field, Will try to complete it by this Week
+
 </a></p>
 
 ** Manikanta Arumilli **
