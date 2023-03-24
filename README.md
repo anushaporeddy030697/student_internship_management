@@ -213,6 +213,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  
  --> Done with the feedback page UI and functional part successfully.
  --> Done with the search bar functionality in company page based on the student age and experience level.
+ --> Done with the mail notification when user sends a feedback about application.
  
  
 </a></p>
