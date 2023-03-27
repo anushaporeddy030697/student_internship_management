@@ -514,7 +514,11 @@ We have sucessfully completed the UI for the student page for the website
 
 3-24-2023
 
-We are working on the hyper links and UI of the project
+We are working on the hyper links and UI of the project.
+
+3-27-2023
+
+We have sucessfully completed the hyper links of the project 
 </a></p>
 
 
