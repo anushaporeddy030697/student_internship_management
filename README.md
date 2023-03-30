@@ -417,7 +417,10 @@ Manikanta : created a rough sketch on the website
 3-21-2023
 --> done with the admin overriding when first admin is login then second admin cannot able to login , second admin gets a notification when first admin was login.
 3-22-2023
---> As per client requirements we are working on the admin page that we need to hide the age and need to add the year of birth
+--> As per client requirements we are working on the admin page that we need to hide the age and need to add the year of birth.
+3-30-2023
+
+--> As per client requirements we are working on search functionality for company and admin page as well.
 
 </a></p>
 
