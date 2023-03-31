@@ -429,6 +429,9 @@ Manikanta : created a rough sketch on the website
 3-30-2023
 
 --> As per client requirements we are working on search functionality for company and admin page as well.
+3-31-2023
+
+--> As per client requirements ,we need to work on UI part for this application and also the documentation.
 
 </a></p>
 
