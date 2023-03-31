@@ -307,6 +307,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 03/27/23-- Completed Reference functionality, As discussed with client he told to make few changes in the application need to work on them
 
+03/29/23-- Worked on the feedback page and made that page to functional 
+
 </a></p>
 
 ** Manikanta Arumilli **
