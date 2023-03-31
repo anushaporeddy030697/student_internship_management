@@ -305,6 +305,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 03/22/23-- Still Working on the search functionality of the reference field, Will try to complete it by this Week
 
+03/27/23-- Completed Reference functionality, As discussed with client he told to make few changes in the application need to work on them
+
 </a></p>
 
 ** Manikanta Arumilli **
