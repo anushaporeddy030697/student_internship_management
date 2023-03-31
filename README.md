@@ -218,6 +218,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  3/31/2023
  
  --> Done with the pie chart in the admin page.
+ --> After submitting the message in contact page by default page is getting refreshed.
  
 </a></p>
 
