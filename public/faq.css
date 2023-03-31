@@ -18,7 +18,7 @@ body {
   background: #efefef;
   display: flex;
   justify-content: center;
-  background-image: url("https://images.unsplash.com/photo-1542397284385-6010376c5337?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop");
+  background-image: url("../assets/img/about-bg.jpeg");
   margin: 0;
   background-size: cover;
   opacity: unset;
@@ -77,10 +77,6 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   color: #000;
-}
-.question {
-  display: flex;
-  justify-content: space-between;
 }
 
 .question-btn {
