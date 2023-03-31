@@ -56,7 +56,40 @@ $searchbutton.addEventListener('click',async (e)=>{
   }
   }
 
-  
+  let flag , a
+let arr = []
+let a1 = companyName , a2 = jobTitle , a3 = Exp , a4 = jobType , a5 = salary
+if(a1)
+ arr.push(a1.toLowerCase())
+if(a2)
+ arr.push(a2.toLowerCase())
+if(a3)
+ arr.push(a3)
+else
+ a3 = 0
+if(a4)
+ arr.push(a4.toLowerCase())
+if(a5)
+ arr.push(a5)
+else 
+ a5 = 0
+
+a = arr.length     
+for(let i=0; i< a ; i++){
+c = Object.values(b)
+if(c.toString().toLowerCase().includes(arr[i].toString().toLowerCase()) || c[4] == a5 || c[2] == a3){
+ flag = true
+}
+else{
+ flag = false
+ break
+    }
+  }
+if(flag == true){
+ console.log(b.companyname)
+ return b.companyname
+  }
+  }
   
   const filteredResult = result.filter(filterTitleFunction)
 
