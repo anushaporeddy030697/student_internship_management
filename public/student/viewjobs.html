@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jobs</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/f52c3b31f3.js" crossorigin="anonymous"></script>
     <script src="./js/auth.js"></script>
   </head>
   <body id="job-body">
-    <div class="container">
+    <nav id="navbar">
+      <div class="container1">
+        <center>
+        <h1 class="logo">
+          <a href="../index.html">Student Internship Management System</a>
+        </h1>
+      </center>
+      </div>
+    </nav>
+    <div class="container" style = "padding-top: 20px;">
       <div  style="overflow: hidden;"
        class="topnav">
         <input class="searchbox" type="text" id="searchbox" placeholder="Search...">
@@ -18,31 +28,50 @@
         <input class="searchbox" type="text" id="experience" placeholder="Experience">
         <input class="searchbox" type="text" id="jobType" placeholder="Job Type...">
         <input class="searchbox" type="text" id="salary" placeholder="Salary">
-      <!--  <input style="float: center;
-        color: black;
-        padding: 6px;
-      
-        border: 1px solid;
-        margin-top: 8px;
-        margin-right: 16px;
-        font-size: 17px;" type="text" id="searchbox" placeholder="Search..">
-        <select name="filtertype" style="padding: 7px;   border-radius: 8px;background-color: #fff" id="filtertype">
+     <!--  <select name="filtertype" style="padding: 7px;   border-radius: 8px;background-color: #fff" id="filtertype">
           <option value="1">Company Name</option>
           <option value="2">Job Title</option>
           <option value="3">Experience Level</option>
           <option value="4">Work Type</option>
-          <option value="5">Job Description</option>
-          <option value="6">Job posted Date</option>
-          <option value="7">Job Status</option>
-          </select>
-        -->
-        <button style="padding: 7px;   border-radius: 8px;background-color: #fff" class="searchbutton">Search</button>
+          </select> -->
+        <button style="padding: 8px 15px; border-radius: 8px;background-color: #fff" class="searchbutton">Search</button>
       </div>
 
       <div id="jobs">
         
       </div>
     </div>
+ <!--   <section class="features bg-dark">
+      <div class="container">
+          <div class="box">
+              <i class="fa-solid fa-hotel fa-3x"></i>
+              <h3>Location</h3>
+              <p>MO, USA</p>
+          </div>
+          <div class="box">
+              <i class="fa-solid fa-phone fa-3x"></i>
+              <h3>phone</h3>
+              <p>(+1) 1234567890</p>
+          </div>
+          <div class="box">
+              <i class="fa-solid fa-envelope fa-3x"></i>
+              <h3>Email</h3>
+              <p>studentinternship123@gmail.com</p>
+      </div>       
+  </section>   -->
+  
+  <div class="clr"></div>
+  
+     
+  <footer class="footer bg-dark" style="margin-top: 0px; background:#444;">
+      <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>copyright &copy 2022 - SIP</p>
+  </footer>
     <script src="js/viewJobs.js"></script>
     <script src="https://kit.fontawesome.com/f52c3b31f3.js" crossorigin="anonymous"></script>
   </body>
