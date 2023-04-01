@@ -219,6 +219,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  
  --> Done with the pie chart in the admin page.
  --> After submitting the message in contact page by default page is getting refreshed.
+ --> Done with the UI part for the edit profile page in the student dashboard.
  
 </a></p>
 
