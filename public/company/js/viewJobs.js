@@ -43,3 +43,20 @@ window.onload=async()=>{
 
 }
  
+$searchbutton.addEventListener('click',async (e)=>{
+  const companyName = document.getElementById('companyName').value
+  const jobTitle = document.getElementById('jobTitle').value
+  const Exp = document.getElementById('experience').value
+  const jobType = document.getElementById('jobType').value
+  const salary = document.getElementById('salary').value
+  const searchterm = search.value.toLowerCase();
+  //console.log(searchterm);
+  const result1 = await fetch(`/companypostedjobs?companyid=${localStorage.getItem('companyid')}`, {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization':'Bearer '+token
+    } 
+  }).then((res) => res.json())
+  
+  console.log(result1)
