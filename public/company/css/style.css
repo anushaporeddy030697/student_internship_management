@@ -225,6 +225,20 @@ p{
       color: rgb(246, 245, 250);
   }
   
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+    
+  }
+  
+  .text-primary{
+      color: #ad3d3d;
+  }
+
+
+  
 
 .profile {
     background: rgb(113, 156, 219);
