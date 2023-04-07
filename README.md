@@ -541,6 +541,9 @@ We have sucessfully completed the hyper links of the project
 
 3-31-2023 
 we are working on the search funconality in the admin page
+
+4-7-2023
+We are working on the name validations for search bar 
 </a></p>
 
 
