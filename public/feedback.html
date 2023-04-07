@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <title>Document</title>
-	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<title>Document</title>
 </head>
 <style>
 * {
@@ -28,14 +28,12 @@
 	--trans-dur: 0.3s;
 	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
 }
-body,
 input {
 	font: 1em/1.5 "DM Sans", sans-serif;
 }
 body {
 	background-color: var(--white);
 	color: var(--gray9);
-	height: 50vh;
 	transition:
 		background-color var(--trans-dur),
 		color var(--trans-dur);
@@ -192,8 +190,15 @@ body {
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color: var(--gray9);
-		color: var(--gray1);
+	background-image: url("./assets/img/blur.jpg");
+    margin: 0;
+    background-size: cover;
+    opacity: unset;
+    overflow-x: visible;
+    overflow-y: scroll;
+    background-repeat: no-repeat;
+    height: 100vh;
+		color: #050505;
 	}
 	.fr__face-right-eye,
 	.fr__face-left-eye {
@@ -393,11 +398,15 @@ border-radius: 8px;
   margin-bottom: 20px;
 }
 
+a{
+	color: white;
+	float: right;
+}
 
 @media screen and (max-width:960px) {
 .col{
   flex: 100%;
-  max-width: 80%;
+ 
 }
 }
 
@@ -408,10 +417,79 @@ border-radius: 8px;
 }
 }
 
+.container{
+  margin: auto;
+  padding: 0 20px;
+  max-width: 1100px;
+
+}
+
+/* Nav bar */
+#navbar {
+    background: #333;
+    color: #FFF;
+    overflow: auto;
+    width: 100%;
+    
+}
+
+#navbar a{
+    color: #fff;
+}
+
+#navbar .logo{
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+    
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+}
+
+
 </style>
-<body>
-	<div class="contain">
+<body id="about-bg">
+	<!-- <header>
+        <nav id="navbar">
+          <div class="container">
+            <h1 class="logo">
+              <a href="index.html">Student Internship Management System</a>
+            </h1>
+            <ul>
+              <li><a  href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="current" href="contact.html">Contact</a></li>
+              <li><a href="student/login.html">Login</a></li>
+              <li><a href="student/register.html">Register</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="feedback.html">Reviews</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>  -->
+	  <div class="contain">
+		<div class="backs" style="float: right; color: white;">
+		<a href="index.html" style="text-decoration: none; color: black; float: right;" ><h2 style="margin: 5px; margin-right: 0px; float: right;"><u>BACK</u></h2></a> </div>
     <form class="fr" style="margin-top: 50px;" action="">
+		
         <label class="fr__label" for="face-rating">How was your experience?</label>
         <div class="fr__face" role="img" aria-label="Straight face">
             <div class="fr__face-right-eye" data-right></div>
@@ -434,7 +512,7 @@ border-radius: 8px;
 		<div class="form-group">
 			<label for="message">Message</label>
 			<textarea name="message" id="message" cols="40" rows="10"></textarea>
-		</div>
+		</div> 
 		<button type="submit" style="margin-left: 200px; margin-top: 20px; border-radius: 8px;" id="submit-button" class="btn">SUBMIT</button>
 	  <p id="my-form-status"></p>
 	</form>
