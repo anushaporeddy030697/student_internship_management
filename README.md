@@ -221,6 +221,10 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  --> After submitting the message in contact page by default page is getting refreshed.
  --> Done with the UI part for the edit profile page in the student dashboard.
  
+ 4/7/2023
+ 
+ -->Done with the pop up message when we want to logout from the page.
+ 
 </a></p>
 
 
