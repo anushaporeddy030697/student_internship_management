@@ -60,3 +60,11 @@ $searchbutton.addEventListener('click',async (e)=>{
   }).then((res) => res.json())
   
   console.log(result1)
+ const filterTitleFunction = (job)=>{
+    // console.log(document.getElementById("filtertype").value)
+   // const filtertype = document.getElementById("filtertype").value
+   // console.log(job)
+  // return filtertype == 1 ? job.companyname.toLowerCase().includes(searchterm) : filtertype == 2 ? job.title.toLowerCase().includes(searchterm) : filtertype == 3 ? job.yoe.toString().includes(searchterm) : job.worktype.toLowerCase().includes(searchterm)
+  if(searchterm) {
+    return  parseInt(job.yoe) == parseInt(searchterm) || job.companyname.toLowerCase().includes(searchterm) || job.title.toLowerCase().includes(searchterm) || job.worktype.toLowerCase().includes(searchterm) || parseInt(job.empbenefits) == parseInt(searchterm)
+   }
