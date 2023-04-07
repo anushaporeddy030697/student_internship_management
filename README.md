@@ -224,6 +224,7 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  4/7/2023
  
  -->Done with the pop up message when we want to logout from the page.
+ --> Done with the UI part for the Edit profile in the student page. 
  
 </a></p>
 
