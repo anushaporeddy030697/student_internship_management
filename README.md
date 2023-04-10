@@ -551,6 +551,9 @@ We are working on the name validations for search bar
 
 4-7-2023
 We have sucssfully completed the funconality for the searech barv in company 
+
+4-10-2023
+we also sucessfully  updated the search bar  (i.e it will take only respective charaters like for salary search bar it will take only numers )
 </a></p>
 
 
