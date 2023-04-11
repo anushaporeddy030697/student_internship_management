@@ -4,16 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Students</title>
+    <title>Applicants</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/authcheck.js"></script>
+    <style>
+      ::placeholder {
+          color: rgb(0, 0, 0);
+          opacity: 0.5;
+        }
+    </style>
   </head> 
   <body id="job-body">
-    <div class="container"> 
+    <nav id="navbar">
+      <div class="container1">
+        <center>
+        <h1 class="logo">
+          <a href="../index.html">Student Internship Management System</a>
+        </h1>
+      </center>
+      </div>
+    </nav>
+    <div class="container" style = "padding-top: 20px;"> 
+      <div  style="overflow: visible;"
+      class="topnav">
+       <input class="searchbox" type="text" id="searchbox"  placeholder="Search...">
+       <input class="searchbox" type="text" id="studentName" placeholder="Student name">
+       <input class="searchbox" type="text" id="email" placeholder="Student Mail ID">
+       <input class="searchbox" type="text" id="universityId" placeholder="University Id">
+       <input class="searchbox" type="text" id="ssn" placeholder="Enter SSN">
+    <!--  <select name="filtertype" style="padding: 7px;   border-radius: 8px;background-color: #fff" id="filtertype">
+         <option value="1">Company Name</option>
+         <option value="2">Job Title</option>
+         <option value="3">Experience Level</option>
+         <option value="4">Work Type</option>
+         </select> -->
+       <button style="padding: 8px 15px; border-radius: 8px;background-color: #fff" class="searchbutton">Search</button>
+     </div>
       <div id="jobs">
         
       </div>
     </div>
+    <footer id="footer" class="footer bg-dark" style="bottom: 0 !important; position: relative; width: 100%; background:#444;">
+      <div class="social">
+          <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>copyright &copy 2023 - SIMS</p>
+  </footer>
     <script src="js/viewStudents.js"></script>
     <script src="https://kit.fontawesome.com/f52c3b31f3.js" crossorigin="anonymous"></script>
   </body>
