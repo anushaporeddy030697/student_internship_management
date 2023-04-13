@@ -319,6 +319,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 03/29/23-- Worked on the feedback page and made that page to functional 
 
+04/10/23-- Done with name validations in Search funationality like job description should be A-Z characters, salary should be positive integers, experience should is not greater than two digit positive integers, etc.
+
 </a></p>
 
 ** Manikanta Arumilli **
