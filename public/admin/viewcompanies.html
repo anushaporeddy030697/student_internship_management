@@ -9,11 +9,42 @@
     <script src="./js/authcheck.js"></script>
   </head> 
   <body id="job-body">
-    <div class="container"> 
-      <div id="jobs">
+    <nav id="navbar">
+      <div class="container1">
+        <center>
+        <h1 class="logo">
+          <a href="../index.html">Student Internship Management System</a>
+        </h1>
+      </center>
+      </div>
+    </nav>
+    <div class="container" style = "padding-top: 60px;"> 
+      <div  style="overflow: visible;"
+      class="topnav">
+       <input class="searchbox" type="text" id="searchbox" placeholder="Search...">
+       <input class="searchbox" type="text" id="companyId" placeholder="Company Id">
+       <input class="searchbox" type="text" id="companyName" placeholder="Company Name">
+    <!--  <select name="filtertype" style="padding: 7px;   border-radius: 8px;background-color: #fff" id="filtertype">
+         <option value="1">Company Name</option>
+         <option value="2">Job Title</option>
+         <option value="3">Experience Level</option>
+         <option value="4">Work Type</option>
+         </select> -->
+       <button style="padding: 8px 15px; border-radius: 8px;background-color: #fff" class="searchbutton">Search</button>
+     </div>
+      <div id="jobs" style="margin-top: 40px;">
         
       </div>
     </div>
+    <footer class="footer bg-dark" id="footer" style="margin-top: 120px; background:#444;">
+      <div class="social">
+          <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>copyright &copy 2023 - SIMS</p>
+  </footer>
     <script src="js/viewCompanies.js"></script>
     <script src="https://kit.fontawesome.com/f52c3b31f3.js" crossorigin="anonymous"></script>
   </body>
