@@ -562,6 +562,10 @@ We have sucssfully completed the funconality for the searech barv in company
 
 4-10-2023
 we also sucessfully  updated the search bar  (i.e it will take only respective charaters like for salary search bar it will take only numers )
+
+4-14-2023
+
+we are working on the edit profile UI in admin page
 </a></p>
 
 
