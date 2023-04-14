@@ -229,7 +229,8 @@ I made rough figure on the paper for login pages design flow chart and dashboard
  4/14/2023
  
  --> Done with some basic modifications of UI.
- --> Done with the username validations for the applications.    
+ --> Done with the username validations for the applications.
+ --> Done with the search bar functionality in admin dashboard.    
  
 </a></p>
 
