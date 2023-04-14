@@ -90,6 +90,17 @@ p{
  .py6{ padding: 60px 0;}
 
 
+.container{
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+  
+}
+
+.text-primary{
+    color: #ad3d3d;
+}
 /* Nav bar */
 #navbar {
     background: #333;
