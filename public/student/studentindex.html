@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
+    <script src="https://kit.fontawesome.com/f52c3b31f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/auth.js"></script>
   </head>
@@ -20,29 +20,129 @@
             <li><a class="current" href="#">Home</a></li>
             <li><a href="profile.html">Profile</a></li>
             <li><a href="../about.html" target="_blank">About</a></li>
-            <li><a href="../contact.html" target="_blank">Contact</a></li>
+            <li><a href="contact.html" >Contact</a></li>
             <li><a href="../faq.html" target="_blank">FAQ</a></li>
-            <li><a href="../feedback.html" target="_blank">Reviews</a></li>
+            <li><a href="feedback.html">Reviews</a></li>
             <li><a class="logout-btn" href="#">Logout</a></li>
           </ul>
         </div>
       </nav>
     
     <div class="container py3">
-      <h1 id="welcome" class="name-welcome">welcome {{name}}</h1>
+      <h1 id="welcome" class="name-welcome"></h1>
+      <div class="img">
+        <img src="./assets/student.svg"
+      </div> 
       <div class="boxes py6">
-        <div class="totaljobs">
-          <h2 id="totaljobscount">0</h2>
-          <h3>Total jobs available</h3>
+       
+        
+            <!-- PROFESSIONAL -->
+            <div class="totaljobs block professional fl">
+              <h2 class="title">Available Jobs</h2>
+              <!-- CONTENT -->
+              <div class="content">
+                  <p class="price">
+                     
+                      <span id="totaljobscount"></span>
+                      
+                  </p>
+                  <p class="hint"></p>
+              </div>
+              <!-- /CONTENT -->
+              <!-- FEATURES -->
+              <ul class="features">
+                  <li><span class="fontawesome-cog"></span>Amazon - Developer</li>
+                  <li><span class="fontawesome-star"></span>Apple - IT Support</li>
+                  <li><span class="fontawesome-dashboard"></span>Azure Data Analyst</li>
+                  <li><span class="fontawesome-cloud"></span>Microsoft - Graduate Trainee</li>
+              </ul>
+              <!-- /FEATURES -->
+              <!-- PT-FOOTER -->
+              <div class="pt-footer">
+                  <p>APPLY FOR JOBS!</p>
+              </div>
+              <!-- /PT-FOOTER -->
+          </div>
+          <!-- /PROFESSIONAL -->
+          <!-- BUSINESS -->
+          <div class="totalapplied block business fl">
+              <h2 class="title">Jobs Applied</h2>
+              <!-- CONTENT -->
+              <div class="content">
+                  <p class="price">
+                     
+                      <span id="appliedjobscount"></span>
+                      
+                  </p>
+                  <p class="hint"></p>
+              </div>
+              <!-- /CONTENT -->
+
+              <!-- FEATURES -->
+              <ul class="features">
+                  <li><span class="fontawesome-cog"></span>Status - Applied</li>
+                  <li><span class="fontawesome-star"></span>Status - Applied</li>
+                  <li><span class="fontawesome-dashboard"></span>Status - Qualified</li>
+                  <li><span class="fontawesome-cloud"></span>Status - Rejected</li>
+              </ul>
+              <!-- /FEATURES -->
+
+              <!-- PT-FOOTER -->
+              <div class="pt-footer">
+                  <p>Jobs Status :)</p>
+              </div>
+              <!-- /PT-FOOTER -->
+          </div>
+       
+       
+      <!--  <div class="totaljobs personal block">
+          <h2 class="title">Jobs</h2>
+           
+            <div class="content">
+              <p class="price">
+            
+                  <span id="totaljobscount">0</span>
+                  <h2>Jobs</h2>
+              </p>
+              <p class="hint">Perfect for freelancers</p>
+          </div>
+     
+          <div class="pt-footer">
+            <p>Host My Website</p>
+        </div>
+     
         </div>
         <div class="totalapplied">
           <h2 id="appliedjobscount">0</h2>
           <h3>No of jobs applied</h3>
-        </div>
+        </div>  -->
+
+
+
       </div>
+      <div class="img1">
+        <img src="./assets/student1.svg"
+      </div> 
     </div>
   </header>
 <!-- Start of Async Drift Code -->
+<footer class="footer bg-dark" style="
+position: fixed;
+margin-top: 150px !important; 
+padding: 10px;
+padding-bottom: 0px;
+left: 0;
+bottom: 0;
+width: 100%;
+margin-bottom: 0 !important; ">
+ <div class="social">
+   <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+ <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+ <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+ <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+ </div>
+ <p>copyright &copy 2023 - SIMS</p>
+</footer>
 <script>
   "use strict";
   
@@ -71,6 +171,7 @@
   </script>
   <!-- End of Async Drift Code -->
     <script src="./js/studentindex.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>
  
