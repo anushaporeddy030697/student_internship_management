@@ -327,6 +327,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 04/10/23-- Done with name validations in Search funationality like job description should be A-Z characters, salary should be positive integers, experience should is not greater than two digit positive integers, etc.
 
+04/14/23-- Need to work on UI pages of apply jobs page in student and post job page in Company
+
 </a></p>
 
 ** Manikanta Arumilli **
