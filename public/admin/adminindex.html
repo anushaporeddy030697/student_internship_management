@@ -5,42 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/authcheck.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/f52c3b31f3.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="home">
       <nav id="navbar">
         <div class="container">
           <h1 class="logo">
-            <a href="index.html">Student Internship Management System</a>
+            <a href="#">Student Internship Management System</a>
           </h1>
           <ul>
             <li><a class="current" href="#">Home</a></li>
             <li><a href="profile.html">Profile</a></li>
+            <li><a href="https://app.drift.com/conversations" target="_blank">Messages</a></li>
             <li><a class="logout-btn" href="#">Logout</a></li>
           </ul>
         </div>
       </nav>
-    </header>
-    <div class="container py3">
-      <h1 id="welcome" class="name-welcome">welcome {{name}}</h1>
-      <div class="boxes py6">
-        <div class="totalapplied">
-         <h2 id="totalstudentscount">0</h2>
-          <h3>Total No of Students</h3> 
-        </div>
-        <div class="totalcompanies" style=" cursor:pointer">
-          <h2 id="totalcompaniescount">0</h2>
-          <h3>Total No of companies</h3> 
-        </div>
-        <div class="totaljobs">
-          <h2 id="totaljobscount">0</h2>
-          <h3>Total No Of Jobs</h3>
-        </div>
+    
+      <div class="container py3">
+        <h1 id="welcome" class="name-welcome"></h1>
+  
+        <div class="img1">
+          <img src="../assets/img/company1.svg"
+        </div> 
+        <div class="boxes py3">
+         
+         <!-- PROFESSIONAL -->
+         <div class="totalapplied block posted fl">
+          <h2 class="title">Received Applications</h2>
+          <!-- CONTENT -->
+          <div class="content">
+              <p class="price">
+                 
+                  <span id="totalstudentscount"></span>
+                  
+              </p>
+              <p class="hint"></p>
+          </div>
+          <!-- /CONTENT -->
+          <!-- FEATURES -->
+          <ul class="features">
+            <li><span class="fontawesome-cog"></span>Sai Krishna</li>
+            <li><span class="fontawesome-star"></span>Manikanta</li>
+            <li><span class="fontawesome-dashboard"></span>Parimalla</li>
+            <li><span class="fontawesome-cloud"></span>Shashank</li>
+          </ul>
+          <!-- /FEATURES -->
+          <!-- PT-FOOTER -->
+          <div class="pt-footer">
+              
+          </div>
+          <!-- /PT-FOOTER -->
       </div>
-    </div> 
+      <!-- /PROFESSIONAL -->
+      <!-- BUSINESS -->
+      <div class="totalcompanies block applications fl">
+          <h2 class="title">Companies</h2>
+          <!-- CONTENT -->
+          <div class="content">
+              <p class="price">
+                 
+                  <span id="totalcompaniescount"></span>
+                  
+              </p>
+              <p class="hint"></p>
+          </div>
+          <!-- /CONTENT -->
+  
+          <!-- FEATURES -->
+          <ul class="features">
+              <li><span class="fontawesome-cog"></span>Codeprism</li>
+              <li><span class="fontawesome-star"></span>caterpillar</li>
+              <li><span class="fontawesome-dashboard"></span>Meloria</li>
+              <li><span class="fontawesome-cloud"></span>Amazon</li>
+          </ul>
+          <!-- /FEATURES -->
+  
+          <!-- PT-FOOTER -->
+          <div class="pt-footer">
+            
+          </div>
+          <!-- /PT-FOOTER -->
+      </div>
+  
+      <!--Total Shortlisted-->
+      <div class="totaljobs block shortlisted fl">
+        <h2 class="title">Total Jobs Posted</h2>
+        <!-- CONTENT -->
+        <div class="content">
+            <p class="price">
+               
+                <span id="totaljobscount"></span>
+                
+            </p>
+            <p class="hint"></p>
+        </div>
+        <!-- /CONTENT -->
+  
+        <!-- FEATURES -->
+        <ul class="features">
+          <li><span class="fontawesome-cog"></span>Amazon - Developer</li>
+          <li><span class="fontawesome-star"></span>Apple - IT Support</li>
+          <li><span class="fontawesome-dashboard"></span>Azure Data Analyst</li>
+          <li><span class="fontawesome-cloud"></span>Microsoft - Engineer</li>
+        </ul>
+        <!-- /FEATURES -->
+  
+        <!-- PT-FOOTER -->
+        <div class="pt-footer">
+            
+        </div>
+        <!-- /PT-FOOTER -->
+    </div>
+  
+        </div>
+        <div class="img2">
+          <img src="../assets/img/company2.svg"
+        </div> 
+     
+  
+    <div id="contain" style=" margin-bottom: 50px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #444;">  </div> 
 
+  </div>
+    <footer class="footer bg-dark" style="
+    position: fixed;
+    margin-top: 150px !important; 
+    padding: 10px;
+    padding-bottom: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0 !important; ">
+     <div class="social">
+       <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+     <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+     <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+     <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+     </div>
+     <p>copyright &copy 2023 - SIMS</p>
+    </footer> </div> 
+</header>
     <script src="./js/adminindex.js"></script>
     <script src="./js/authcheck.js"></script>
 
