@@ -118,6 +118,14 @@ p{
     padding-top: 20px;
 }
 
+/* Nav bar */
+#navbar {
+    background: #333;
+    color: #FFF;
+    overflow: auto;
+
+}
+
 #navbar ul{
     list-style: none;
     float: right;
