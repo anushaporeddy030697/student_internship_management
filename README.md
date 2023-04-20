@@ -329,6 +329,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 04/14/23-- Need to work on UI pages of apply jobs page in student and post job page in Company
 
+04/17/23-- Working on Literature review in Documentation, added 10 citations of other authors work. Included how they inspired us to work on our project.
+
 </a></p>
 
 ** Manikanta Arumilli **
