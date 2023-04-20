@@ -577,6 +577,9 @@ we are working on the edit profile UI in admin page
 
 4-19-2023
 We are working on the documentation for the project 
+
+4-20-2023
+We have sucessfully completed all the major funconalities for the project 
 </a></p>
 
 
