@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet">
+
 	<title>Document</title>
 </head>
 <style>
@@ -25,20 +26,24 @@
 	--gray7: hsl(var(--hue),10%,30%);
 	--gray9: hsl(var(--hue),10%,10%);
 	--primary: hsl(var(--hue),90%,55%);
+	--blue: #a1fabf;
+    --lightblue: #9bf0f7;
 	--trans-dur: 0.3s;
-	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-input {
-	font: 1em/1.5 "DM Sans", sans-serif;
-}
+
 body {
 	background-color: var(--white);
 	color: var(--gray9);
 	transition:
 		background-color var(--trans-dur),
 		color var(--trans-dur);
+	background-attachment: fixed;
+	background-position: center;
+	
 }
-/* Main styles */
+/* Main styles  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> */
 .fr {
 	animation: fade-slide-in 0.6s ease-out;
 	padding: 0 1.5em;
@@ -190,14 +195,14 @@ body {
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
 	body {
-	background-image: url("./assets/img/blur.jpg");
+	background-image: url("");
     margin: 0;
     background-size: cover;
     opacity: unset;
     overflow-x: visible;
     overflow-y: scroll;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
 		color: #050505;
 	}
 	.fr__face-right-eye,
@@ -285,54 +290,52 @@ body {
 		visibility: visible;
 	}
 }
+.reviewForm{
+	height: 500px;
+	display: grid;
+	
+}
 .form-group{
 	margin-top: 20px;
 }
-.form-group input , textarea{
-border-radius: 8px;
-}
-.contain{
-	display: grid;
-	place-items: center;
-	border: 2px solid white;
-	border-radius: 8px;
-	margin: 80px 450px;
-	min-width: 400px;
-	padding : 0px;
-	height: auto;
-	width: auto;
-	padding-bottom: 50px;
-}
+
+
 
 .btn{
-    margin: 18px;
-    padding: 15px 20px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    border-radius: 10px;
-    border: 0px;
-    font-weight: 1000;
-    box-shadow: 0px 0px 14px -7px #f09819;
-    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
-    cursor: pointer;
+	background-color: #a1fabf;
+background-image: linear-gradient(90deg, var(--blue) 0%, var(--lightblue) 74%);
+border-radius: 20px;
+border: 1px solid var(--blue);
+color: black;
+cursor: pointer;
+font-size: 0.8rem;
+font-weight: bold;
+letter-spacing: 0.1rem;
+padding: 0.9rem 4rem;
+text-transform: uppercase;
+transition: transform 80ms ease-in;
+font-weight: bolder;
+box-shadow: 0px 0px 14px -7px #7ef7e7;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
 }
 
 .btn:hover {
-    background-position: right center;
+    background-position: center;
     /* change the direction of the change here */
-    color: #fff;
+    color: #ffffff;
+    font-weight: bolder;
+    background-color: black;
+    background-image: linear-gradient(90deg, rgb(24, 23, 23) 0%, #2c2c2c 74%);
     text-decoration: none;
   }
-  
 .btn:active {
-    transform: scale(0.95);
-  }
+transform: scale(0.95);
+}
+.btn:focus {
+outline: none;
+}
 .testimonials{
   padding: 40px 0;
   background: #f1f1f1;
@@ -417,20 +420,83 @@ a{
 }
 }
 
-.container{
-  margin: auto;
-  padding: 0 20px;
-  max-width: 1100px;
-
+/*Footer*/
+.footer {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    margin-top: 50px !important;
+    position: relative;
+    bottom: 0 !important;
+    width: 100%;
 }
 
+.footer .social a{
+    margin-right: 20px;
+    color: turquoise;
+}
+
+.footer .social a:hover{
+    color: #fff;
+ /*   background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%); */
+    background-image: linear-gradient(45deg, #32be8f 0%, #38d39f 510%, #32be8f 100%);
+}
+
+/* Flex Items */
+.flex-items {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex-items >div {
+    padding: 20px;
+}
+
+/* utilities  */
+/* utilities  */
+.container{
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  height: 50px;
+  width: 100%;
+}
+#name , #email , #message {
+    border-radius: 8px;
+    padding: 10px 12px;
+    transition: 1s;
+    border: 2px solid #666666;
+	display: block;
+}
+#name:hover , #email:hover , #message:hover {
+   transform: scale(1.02);
+   border-color: whitesmoke;
+   border: 2px solid #000000;
+}
+.form-group label{
+	font-weight: bolder;
+	font-size: 15px;
+}
+.form-group input{
+	width: 100%;
+}
 /* Nav bar */
 #navbar {
-    background: #333;
+
+    height: 70px;
+  width: 100%;
+   /* background-image: linear-gradient(260deg, #3a3a3a 0%, #4e4e4e 100%); */
+   background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
     color: #FFF;
-    overflow: auto;
-    width: 100%;
-    
+    overflow-x: visible;
+    overflow-y: hidden;
+
 }
 
 #navbar a{
@@ -439,13 +505,14 @@ a{
 
 #navbar .logo{
     float: left;
+    margin-left: 0px !important;
     padding-top: 20px;
 }
 
 #navbar ul{
     list-style: none;
     float: right;
-    
+    margin-left: 20px !important;
 }
 
 #navbar ul li {
@@ -453,21 +520,64 @@ a{
 }
 
 #navbar ul li a{
+    font-size: 18px;
     display: block;
     padding: 20px;
     text-align: center;
+    transition: 0.1s;
 }
 
 #navbar ul li a:hover,
 #navbar ul li a.current {
-    background: #444;
-    color: #f7c08a;
+    
+    color: whitesmoke;
+    transform: scale(1.1);
 }
-
-
+#home {
+        margin: 0;  
+        overflow: visible;
+        height: 70px;
+        width: 100%;
+    }
+.contain {
+		background-color: rgb(255, 255, 255 , 0.1);
+		border-radius: 8px;
+		box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+		0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+		height: 730px;
+		max-height: 900px;
+		max-width: 600px;
+		min-height: 400px;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		transition: 1s;
+		top : 3% !important;
+		margin-bottom: 100px !important;
+		display: grid;
+		place-items: center;
+		border: 2px solid #333;
+		padding-bottom: 50px;
+		margin: 80px 450px;
+}
+.boxx{
+	display: grid;
+	height: 100%;
+	place-items: center;
+	width: 100%;
+}
+.contact-img{
+  height: 700px;
+  width:  650px;
+  z-index: -2;
+  opacity: 0.3;
+  top: 30%;
+  left: 0%;
+  position: absolute;
+}
 </style>
-<body id="about-bg">
-	<!-- <header>
+<body >
+    <header>
         <nav id="navbar">
           <div class="container">
             <h1 class="logo">
@@ -475,8 +585,8 @@ a{
             </h1>
             <ul>
               <li><a  href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a class="current" href="contact.html">Contact</a></li>
+              <li><a  class="current" href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
               <li><a href="student/login.html">Login</a></li>
               <li><a href="student/register.html">Register</a></li>
               <li><a href="faq.html">FAQ</a></li>
@@ -484,12 +594,17 @@ a{
             </ul>
           </div>
         </nav>
-      </header>  -->
+    </header> 
+	<div class="boxx">
+ <div class="contact-img">
+	<img src="./assets/img/contact.svg">
+ </div>
+	
 	  <div class="contain">
-		<div class="backs" style="float: right; color: white;">
-		<a href="index.html" style="text-decoration: none; color: black; float: right;" ><h2 style="margin: 5px; margin-right: 0px; float: right;"><u>BACK</u></h2></a> </div>
+	<!--	<div class="backs" style="float: right; color: white;">
+		<a href="index.html" style="text-decoration: none; color: black; float: right;" ><h2 style="margin: 5px; margin-right: 0px; float: right;"><u>BACK</u></h2></a> </div> -->
     <form class="fr" style="margin-top: 50px;" action="">
-		
+		<h3>  </h3>
         <label class="fr__label" for="face-rating">How was your experience?</label>
         <div class="fr__face" role="img" aria-label="Straight face">
             <div class="fr__face-right-eye" data-right></div>
@@ -500,24 +615,25 @@ a{
         <input class="fr__input" id="face-rating" type="range" value="2.5" min="0" max="5" step="0.1">
     </form>
 	        
-	<form id="reviews-send-form" style="margin-top: 50px;" action="">
+	<form class="reviewForm" id="reviews-send-form" style=" margin-top: 30px;" action="">
 		<div class="form-group">
 			<label for="name">Name</label>
 			<input type="text" id="name">
 		</div>
 		<div class="form-group">
-			<label for="email">Email</label>
+			<label for="email">Email</label> 
 			<input type="email" name="email" id="email">
 		</div>
 		<div class="form-group">
 			<label for="message">Message</label>
 			<textarea name="message" id="message" cols="40" rows="10"></textarea>
 		</div> 
-		<button type="submit" style="margin-left: 200px; margin-top: 20px; border-radius: 8px;" id="submit-button" class="btn">SUBMIT</button>
+		<button type="submit" style="margin-left: 100px; margin-top: 20px; border-radius: 8px;" id="submit-button" class="btn">SUBMIT</button>
 	  <p id="my-form-status"></p>
 	</form>
 </div>
 
+<!--
 <div class="testimonials">
 	<div class="inner">
 	  <h1>Testimonials</h1>
@@ -579,7 +695,19 @@ a{
 		</div>
 	  </div>
 	</div>
-  </div>
+  </div>  --> </div>
+  <footer class="footer bg-dark" style="
+margin-top: 0px; background:#444;">
+	<div class="social">
+	  <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+	<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+	<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+	<a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+	</div>
+	<p>copyright &copy 2023 - SIMS</p>
+</footer>
+  <script src="https://kit.fontawesome.com/f52c3b31f3.js" crossorigin="anonymous"></script>
+  
     <script>window.addEventListener("DOMContentLoaded",() => {
         const fr = new FaceRating("#face-rating");
 		console.log(document.getElementById("face-rating").value)
@@ -676,5 +804,6 @@ if (!result.error) {
 }
 
 })</script>
+ 
 </body>
 </html>
