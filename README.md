@@ -331,6 +331,8 @@ Discussed about search bar and chatbox and need to collect the information for a
 
 04/17/23-- Working on Literature review in Documentation, added 10 citations of other authors work. Included how they inspired us to work on our project.
 
+04/20/23-- Completed Literature review, need to change citations in Order and we have to add more introduction 
+
 </a></p>
 
 ** Manikanta Arumilli **
